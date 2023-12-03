@@ -1,5 +1,5 @@
 {
-	"name": "ai-dialogue-creator",
+	"name": "opentabs",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -12,6 +12,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^3.1.4",
 		"@skeletonlabs/skeleton": "^2.5.1",
 		"@skeletonlabs/tw-plugin": "^0.2.4",
 		"@sveltejs/adapter-auto": "^2.0.0",

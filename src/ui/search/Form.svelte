@@ -1,0 +1,55 @@
+<script lang="ts">
+	import { enhance } from '$app/forms';
+	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
+	import { HtmlInputUtils } from '$lib/utils/html-input';
+	import Icon from '@iconify/svelte';
+	const { debounce } = new HtmlInputUtils();
+
+	let form: HTMLFormElement;
+	let searchResults = [];
+
+	const debounceThenSubmit = debounce((event: Event) => {
+		event.preventDefault();
+		const { value } = <HTMLTextAreaElement>event.target;
+
+		if (value.length < MINIMUM_CHARATCERS_FOR_SEARCH) {
+			return;
+		}
+
+		// form.submit();
+	}, 150);
+</script>
+
+<form
+	method="POST"
+	bind:this={form}
+	action="?/search"
+	class="flex justify-around items-center"
+	use:enhance={({ formElement, formData, action, cancel, submitter }) => {
+		return async ({ result, update }) => {
+			console.log('RESULT', result);
+
+			await update({ reset: false });
+		};
+	}}
+>
+	<input
+		class="mr-4 block w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-center"
+		type="text"
+		name="q"
+		placeholder="Metallica"
+		on:keyup={debounceThenSubmit}
+		minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
+		min={MINIMUM_CHARATCERS_FOR_SEARCH}
+	/>
+
+	<button
+		type="submit"
+		class="flex items-center w-fit h-full px-2 py-1 font-semibold p-2 rounded-lg shadow-md transition duration-75 cursor-pointer bg-red-500 hover:bg-red-400 text-white disabled:bg-slate-5 disabled:hover:bg-slate-6 disabled:hover:cursor-not-allowed"
+	>
+		<span class="mr-0.5">Search</span>
+		<span>
+			<!-- <Icon icon="mdi:search" class="text-lg" /> -->
+		</span>
+	</button>
+</form>

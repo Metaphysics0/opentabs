@@ -1,7 +1,7 @@
 <script>
-	import SearchForm from '../ui/SearchForm.svelte';
+	import SearchForm from '../ui/search/Form.svelte';
 </script>
 
-<main>
+<main class="max-w-5xl mx-auto">
 	<SearchForm />
 </main>

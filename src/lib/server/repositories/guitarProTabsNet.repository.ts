@@ -15,7 +15,7 @@ export class GuitarProTabsNetRepository extends BaseRepository implements Resour
 
 			return Array.from(searchResultsHtml).map(this.extractInformationFromSearchResultItem);
 		} catch (error) {
-			console.error('error getting search results from UltimateProTabs.org', error);
+			this.logSearchError('error getting search results from UltimateProTabs.org', error);
 			return [];
 		}
 	}

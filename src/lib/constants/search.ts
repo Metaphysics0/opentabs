@@ -1,0 +1,1 @@
+export const MINIMUM_CHARATCERS_FOR_SEARCH = 3;
