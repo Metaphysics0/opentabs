@@ -16,24 +16,16 @@ export class SearchService {
 
 	async call(): Promise<any> {
 		try {
-			const [songsterrResults, ultimateGuitarResults, guitarProOrgResults] = await Promise.all([
+			const results = await Promise.all([
 				this.fetchResultsFromRepository(this.songsterrRepository),
 				this.fetchResultsFromRepository(this.ultimateGuitarRepository),
 				this.fetchResultsFromRepository(this.guitarProTabsOrgRepository)
 			]);
 
-			return {
-				songsterrResults,
-				ultimateGuitarResults,
-				guitarProOrgResults
-			};
+			return results.flat();
 		} catch (error) {
 			console.error('Fetching results failed', error);
-			return {
-				songsterrResults: [],
-				ultimateGuitarResults: [],
-				guitarProOrgResults: []
-			};
+			return [];
 		}
 	}
 

@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import { mockSearchResults } from '$lib/constants/mockData';
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
 	import { HtmlInputUtils } from '$lib/utils/html-input';
-	import Icon from '@iconify/svelte';
+	import SearchResultItem from './SearchResultItem.svelte';
 	const { debounce } = new HtmlInputUtils();
-
-	let form: HTMLFormElement;
-	let searchResults = [];
 
 	const debounceThenSubmit = debounce((event: Event) => {
 		event.preventDefault();
@@ -18,17 +16,23 @@
 
 		// form.submit();
 	}, 150);
+
+	let searchResults: SearchResult[] = [];
+
+	function setSearchResults(formResult: any) {
+		if (formResult?.data?.results) {
+			searchResults = formResult.data.results;
+		}
+	}
 </script>
 
 <form
 	method="POST"
-	bind:this={form}
 	action="?/search"
 	class="flex justify-around items-center"
 	use:enhance={({ formElement, formData, action, cancel, submitter }) => {
 		return async ({ result, update }) => {
-			console.log('RESULT', result);
-
+			setSearchResults(result);
 			await update({ reset: false });
 		};
 	}}
@@ -48,8 +52,9 @@
 		class="text-lg flex items-center w-fit h-full px-2 py-1 font-semibold p-2 rounded-lg shadow-md transition duration-75 cursor-pointer bg-red-500 hover:bg-red-400 text-white disabled:bg-slate-5 disabled:hover:bg-slate-6 disabled:hover:cursor-not-allowed"
 	>
 		<span class="mr-0.5">Search</span>
-		<span>
-			<!-- <Icon icon="mdi:search" class="text-lg" /> -->
-		</span>
 	</button>
 </form>
+
+{#each searchResults as searchResult, index}
+	<SearchResultItem {searchResult} {index} />
+{/each}
