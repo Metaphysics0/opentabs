@@ -1,8 +1,6 @@
-import Fetcher from '../utils/fetch';
+import { BaseRepository } from './base.repostiory';
 
-export class SongsterrRepository implements ResourceRepository {
-	constructor(private fetcher = new Fetcher()) {}
-
+export class SongsterrRepository extends BaseRepository implements ResourceRepository {
 	async search(searchText: string) {
 		try {
 			const url = this.createSearchUrl(searchText);
@@ -10,7 +8,7 @@ export class SongsterrRepository implements ResourceRepository {
 
 			return searchResponse.json();
 		} catch (error) {
-			console.error('songsterr search failed', error);
+			this.logSearchError(error);
 			return [];
 		}
 	}

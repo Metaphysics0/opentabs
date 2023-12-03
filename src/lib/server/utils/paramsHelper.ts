@@ -1,3 +1,4 @@
+import { isEmpty } from 'lodash-es';
 export class ParamsHelper {
 	getRequiredFormDataParam<T>({
 		formData,
@@ -10,7 +11,7 @@ export class ParamsHelper {
 	}): T {
 		const paramValue = formData.get(paramName);
 
-		if (paramValue === null || typeof paramValue !== paramType) {
+		if (isEmpty(paramValue) || typeof paramValue !== paramType) {
 			console.error(`Invalid ${paramName} input`, paramValue);
 			throw new Error(`${paramName} is invalid`);
 		}

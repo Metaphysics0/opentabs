@@ -1,11 +1,9 @@
-import { ScraperService } from '../services/scraper.service';
-import Fetcher from '../utils/fetch';
+import { BaseRepository } from './base.repostiory';
 
-export class GuitarProTabsOrgRepository implements ResourceRepository {
-	constructor(
-		private fetcher = new Fetcher(),
-		private scraper = new ScraperService()
-	) {}
+export class GuitarProTabsOrgRepository extends BaseRepository implements ResourceRepository {
+	constructor() {
+		super();
+	}
 
 	async search(query: string) {
 		try {
@@ -18,7 +16,7 @@ export class GuitarProTabsOrgRepository implements ResourceRepository {
 
 			return Array.from(searchResultsHtml).map(this.extractInformationFromSearchResultItem);
 		} catch (error) {
-			console.error('error getting search results from UltimateProTabs.org', error);
+			this.logSearchError(error);
 			return [];
 		}
 	}

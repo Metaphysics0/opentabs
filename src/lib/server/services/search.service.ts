@@ -17,16 +17,13 @@ export class SearchService {
 
 	async call(): Promise<any> {
 		try {
-			const songsterrResults = await this.fetchResultsFromRepository(this.songsterrRepository);
-			const ultimateGuitarResults = await this.fetchResultsFromRepository(
-				this.ultimateGuitarRepository
-			);
-			const guitarProOrgResults = await this.fetchResultsFromRepository(
-				this.guitarProTabsOrgRepository
-			);
-			const guitarProNetResults = await this.fetchResultsFromRepository(
-				this.guitarProTabsNetRepository
-			);
+			const [songsterrResults, ultimateGuitarResults, guitarProOrgResults, guitarProNetResults] =
+				await Promise.all([
+					this.fetchResultsFromRepository(this.songsterrRepository),
+					this.fetchResultsFromRepository(this.ultimateGuitarRepository),
+					this.fetchResultsFromRepository(this.guitarProTabsOrgRepository),
+					this.fetchResultsFromRepository(this.guitarProTabsNetRepository)
+				]);
 
 			return {
 				songsterrResults,
