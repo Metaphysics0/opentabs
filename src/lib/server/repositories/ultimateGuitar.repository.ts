@@ -1,3 +1,4 @@
+import { SupportedResources } from '$lib/types/enums';
 import { BaseRepository } from './base.repostiory';
 
 export class UltimateGuitarRepository extends BaseRepository implements ResourceRepository {

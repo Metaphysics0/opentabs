@@ -1,3 +1,4 @@
+import { SupportedResources } from '$lib/types/enums';
 import { BaseRepository } from './base.repostiory';
 
 export class GuitarProTabsOrgRepository extends BaseRepository implements ResourceRepository {
@@ -13,27 +14,30 @@ export class GuitarProTabsOrgRepository extends BaseRepository implements Resour
 				.getElementsByTagName('tbody')[0]
 				.getElementsByTagName('tr');
 
-			return Array.from(searchResultsHtml).map(this.extractInformationFromSearchResultItem);
+			return Array.from(searchResultsHtml).map(this.convertDataToSearchResultSchema);
 		} catch (error) {
 			this.logSearchError(error);
 			return [];
 		}
 	}
 
-	private extractInformationFromSearchResultItem(item: HTMLTableRowElement) {
+	private convertDataToSearchResultSchema(item: HTMLTableRowElement): SearchResult {
 		const tdElements = item.getElementsByTagName('td');
-		const [songName, artist, fileExtension, downloadCount] = Array.from(tdElements).map(
+		const [songTitle, artistName, fileExtension, downloadCount] = Array.from(tdElements).map(
 			(a) => a.textContent
 		);
 		const downloadLink =
 			tdElements?.[0]?.getElementsByTagName('a')[0]?.getAttribute('href') + 'download';
 
 		return {
-			songName,
-			artist,
-			fileExtension,
-			downloadCount,
-			downloadLink
+			songTitle: songTitle!,
+			artistName: artistName!,
+			origin: SupportedResources.GUITAR_PRO_TABS_ORG,
+			originUrl: downloadLink,
+			metadata: {
+				fileExtension,
+				downloadCount
+			}
 		};
 	}
 

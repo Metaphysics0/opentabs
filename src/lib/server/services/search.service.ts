@@ -9,28 +9,23 @@ export class SearchService {
 		{ searchQuery }: SearchServiceOptions,
 		private readonly songsterrRepository = new SongsterrRepository(),
 		private readonly ultimateGuitarRepository = new UltimateGuitarRepository(),
-		private readonly guitarProTabsOrgRepository = new GuitarProTabsOrgRepository(),
-		private readonly guitarProTabsNetRepository = new GuitarProTabsNetRepository()
+		private readonly guitarProTabsOrgRepository = new GuitarProTabsOrgRepository()
 	) {
 		this.searchQuery = searchQuery;
 	}
 
 	async call(): Promise<any> {
 		try {
-			// const [songsterrResults, ultimateGuitarResults, guitarProOrgResults, guitarProNetResults] =
-			// await Promise.all([
-			// 	this.fetchResultsFromRepository(this.songsterrRepository),
-			// 	this.fetchResultsFromRepository(this.ultimateGuitarRepository),
-			// 	this.fetchResultsFromRepository(this.guitarProTabsOrgRepository),
-			// 	this.fetchResultsFromRepository(this.guitarProTabsNetRepository)
-			// ]);
+			const [songsterrResults, ultimateGuitarResults, guitarProOrgResults] = await Promise.all([
+				this.fetchResultsFromRepository(this.songsterrRepository),
+				this.fetchResultsFromRepository(this.ultimateGuitarRepository),
+				this.fetchResultsFromRepository(this.guitarProTabsOrgRepository)
+			]);
 
 			return {
-				songsterrResults: await this.fetchResultsFromRepository(this.songsterrRepository),
-				// @ts-ignore
-				ultimateGuitarResults: await this.fetchResultsFromRepository(this.ultimateGuitarRepository)
-				// guitarProOrgResults,
-				// guitarProNetResults
+				songsterrResults,
+				ultimateGuitarResults,
+				guitarProOrgResults
 			};
 		} catch (error) {
 			console.error('Fetching results failed', error);
