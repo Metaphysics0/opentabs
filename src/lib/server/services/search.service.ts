@@ -1,3 +1,4 @@
+import { GuitarProTabsNetRepository } from '../repositories/guitarProTabsNet.repository';
 import { GuitarProTabsOrgRepository } from '../repositories/guitarProTabsOrg.repository';
 import { SongsterrRepository } from '../repositories/songsterr.repository';
 import { UltimateGuitarRepository } from '../repositories/ultimateGuitar.repository';
@@ -8,7 +9,8 @@ export class SearchService {
 		{ searchQuery }: SearchServiceOptions,
 		private readonly songsterrRepository = new SongsterrRepository(),
 		private readonly ultimateGuitarRepository = new UltimateGuitarRepository(),
-		private readonly guitarProOrgRepository = new GuitarProTabsOrgRepository()
+		private readonly guitarProTabsOrgRepository = new GuitarProTabsOrgRepository(),
+		private readonly guitarProTabsNetRepository = new GuitarProTabsNetRepository()
 	) {
 		this.searchQuery = searchQuery;
 	}
@@ -20,13 +22,17 @@ export class SearchService {
 				this.ultimateGuitarRepository
 			);
 			const guitarProOrgResults = await this.fetchResultsFromRepository(
-				this.guitarProOrgRepository
+				this.guitarProTabsOrgRepository
+			);
+			const guitarProNetResults = await this.fetchResultsFromRepository(
+				this.guitarProTabsNetRepository
 			);
 
 			return {
 				songsterrResults,
 				ultimateGuitarResults,
-				guitarProOrgResults
+				guitarProOrgResults,
+				guitarProNetResults
 			};
 		} catch (error) {
 			console.error('Fetching results failed', error);
