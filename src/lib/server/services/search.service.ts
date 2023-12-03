@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { GuitarProTabsOrgRepository } from '../repositories/guitarProTabsOrg.repository';
 import { SongsterrRepository } from '../repositories/songsterr.repository';
 import { UltimateGuitarRepository } from '../repositories/ultimateGuitar.repository';
 
@@ -7,7 +8,8 @@ export class SearchService {
 	constructor(
 		{ searchQuery }: SearchServiceOptions,
 		private songsterrRepository = new SongsterrRepository(),
-		private ultimateGuitarRepository = new UltimateGuitarRepository()
+		private ultimateGuitarRepository = new UltimateGuitarRepository(),
+		private guitarProOrgRepository = new GuitarProTabsOrgRepository()
 	) {
 		this.searchQuery = searchQuery;
 	}
@@ -18,10 +20,14 @@ export class SearchService {
 			const ultimateGuitarResults = await this.fetchResultsFromRepository(
 				this.ultimateGuitarRepository
 			);
+			const guitarProOrgResults = await this.fetchResultsFromRepository(
+				this.guitarProOrgRepository
+			);
 
 			return {
 				songsterrResults,
-				ultimateGuitarResults
+				ultimateGuitarResults,
+				guitarProOrgResults
 			};
 		} catch (error) {
 			console.error('Fetching results failed', error);

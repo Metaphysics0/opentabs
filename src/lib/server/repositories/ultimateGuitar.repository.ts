@@ -2,12 +2,15 @@ import { ScraperService } from '../services/scraper.service';
 import Fetcher from '../utils/fetch';
 
 export class UltimateGuitarRepository implements ResourceRepository {
-	constructor(private scraperService = new ScraperService()) {}
+	constructor(
+		private fetcher = new Fetcher(),
+		private scraperService = new ScraperService()
+	) {}
 
 	async search(searchText: string): Promise<any[]> {
 		try {
 			const url = this.createSearchUrl(searchText);
-			const response = await new Fetcher().fetch(url);
+			const response = await this.fetcher.fetchWithRandomUserAgent(url);
 			const document = await this.scraperService.convertResponseTextToDocument(response);
 			const content = document.getElementsByClassName('js-store')[0].getAttribute('data-content');
 			if (!content) {

@@ -1,10 +1,12 @@
 import Fetcher from '../utils/fetch';
 
 export class SongsterrRepository implements ResourceRepository {
+	constructor(private fetcher = new Fetcher()) {}
+
 	async search(searchText: string) {
 		try {
 			const url = this.createSearchUrl(searchText);
-			const searchResponse = await new Fetcher().fetch(url);
+			const searchResponse = await this.fetcher.fetchWithRandomUserAgent(url);
 
 			return searchResponse.json();
 		} catch (error) {
