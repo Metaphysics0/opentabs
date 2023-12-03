@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import { HtmlInputUtils } from '$lib/utils/html-input';
+	const { debounce } = new HtmlInputUtils();
 
 	async function search(event: Event) {
 		try {
@@ -11,22 +13,14 @@
 	}
 
 	let searchResults = [];
-
-	const debounceDurationInMs = 150;
-	let timer: any;
-	let isPromiseInProgress: boolean = false;
-	const debounceThenSearch = (event: Event) => {
+	const debounceThenSearch = debounce((event: Event) => {
 		const { value } = <HTMLTextAreaElement>event.target;
-		clearTimeout(timer);
 		if (value === '') {
 			searchResults = [];
 			return;
 		}
-		timer = setTimeout(() => {
-			isPromiseInProgress = true;
-			search(event);
-		}, debounceDurationInMs);
-	};
+		search(event);
+	}, 150);
 </script>
 
 <form

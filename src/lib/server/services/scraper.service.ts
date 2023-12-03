@@ -1,12 +1,8 @@
 import { JSDOM } from 'jsdom';
 export class ScraperService {
-	async convertResponseTextToDocument(response: Response, withLog?: boolean) {
+	async convertResponseTextToDocument(response: Response) {
 		try {
 			const text = await response.text();
-			if (withLog) {
-				console.log('text', text);
-			}
-
 			return new JSDOM(text).window.document;
 		} catch (error) {
 			console.error('scraper service failed', error);
