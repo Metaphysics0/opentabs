@@ -1,16 +1,20 @@
 import Fetcher from '../utils/fetch';
 
-export class SongsterrRepository {
+export class SongsterrRepository implements ResourceRepository {
 	async search(searchText: string) {
-		const url = this.createSongsterrSearchUrl(searchText);
-		const searchResponse = await new Fetcher().fetch(url);
+		try {
+			const url = this.createSearchUrl(searchText);
+			const searchResponse = await new Fetcher().fetch(url);
 
-		return searchResponse.json();
+			return searchResponse.json();
+		} catch (error) {
+			console.error('songsterr search failed', error);
+			return [];
+		}
 	}
 
-	private createSongsterrSearchUrl(searchText: string) {
-		const baseUrl = `https://www.songsterr.com/api/songs?size=${this.MAX_SEARCH_RESULTS}&pattern=`;
-		return baseUrl + searchText;
+	private createSearchUrl(searchText: string) {
+		return `https://www.songsterr.com/api/songs?size=${this.MAX_SEARCH_RESULTS}&pattern=${searchText}`;
 	}
 
 	private MAX_SEARCH_RESULTS = 50;

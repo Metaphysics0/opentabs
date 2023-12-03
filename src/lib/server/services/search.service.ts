@@ -15,8 +15,9 @@ export class SearchService {
 	async call(): Promise<any> {
 		try {
 			const songsterrResults = await this.fetchResultsFromRepository(this.songsterrRepository);
-			const res = await this.fetchResultsFromRepository(this.ultimateGuitarRepository);
-			const ultimateGuitarResults: never[] = [];
+			const ultimateGuitarResults = await this.fetchResultsFromRepository(
+				this.ultimateGuitarRepository
+			);
 
 			return {
 				songsterrResults,
@@ -31,7 +32,7 @@ export class SearchService {
 		}
 	}
 
-	private async fetchResultsFromRepository(repository: any): Promise<any[]> {
+	private async fetchResultsFromRepository(repository: ResourceRepository): Promise<any[]> {
 		try {
 			return repository.search(this.searchQuery);
 		} catch (error) {
