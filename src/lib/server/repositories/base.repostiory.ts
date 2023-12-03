@@ -1,11 +1,7 @@
-import { ScraperService } from '../services/scraper.service';
-import Fetcher from '../utils/fetch';
+import Scraper from '../utils/scraper';
 
 export abstract class BaseRepository {
-	constructor(
-		protected fetcher = new Fetcher(),
-		protected scraper = new ScraperService()
-	) {}
+	constructor(protected scraper = new Scraper()) {}
 
 	protected logSearchError(error: any) {
 		const className = this.constructor.name;

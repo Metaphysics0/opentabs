@@ -4,8 +4,7 @@ export class SongsterrRepository extends BaseRepository implements ResourceRepos
 	async search(searchText: string) {
 		try {
 			const url = this.createSearchUrl(searchText);
-			const searchResponse = await this.fetcher.fetchWithRandomUserAgent(url);
-
+			const searchResponse = await this.scraper.fetchWithRandomUserAgent(url);
 			return searchResponse.json();
 		} catch (error) {
 			this.logSearchError(error);

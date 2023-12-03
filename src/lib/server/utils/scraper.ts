@@ -1,15 +1,27 @@
+import { JSDOM } from 'jsdom';
 import { sample } from 'lodash-es';
-export default class Fetcher {
-	fetchWithRandomUserAgent(url: string) {
-		return fetch(url, {
-			headers: new Headers({
-				'User-Agent': this.randomUserAgent
-			})
-		});
+export default class Scraper {
+	async fetchAndGetDocument(url: string) {
+		const response = await this.fetchWithRandomUserAgent(url);
+		return this.convertResponseTextToDocument(response);
 	}
 
-	get randomUserAgent() {
-		return sample(this.userAgents) as string;
+	async convertResponseTextToDocument(response: Response) {
+		try {
+			const text = await response.text();
+			return new JSDOM(text).window.document;
+		} catch (error) {
+			console.error('scraper service failed', error);
+			throw new Error('Failed converting response text to document');
+		}
+	}
+
+	async fetchWithRandomUserAgent(url: string) {
+		return fetch(url, {
+			headers: new Headers({
+				'User-Agent': sample(this.userAgents) as string
+			})
+		});
 	}
 
 	private userAgents = [

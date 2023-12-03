@@ -8,8 +8,7 @@ export class GuitarProTabsOrgRepository extends BaseRepository implements Resour
 	async search(query: string) {
 		try {
 			const url = this.createSearchUrl(query);
-			const response = await this.fetcher.fetchWithRandomUserAgent(url);
-			const document = await this.scraper.convertResponseTextToDocument(response);
+			const document = await this.scraper.fetchAndGetDocument(url);
 			const searchResultsHtml = document
 				.getElementsByTagName('tbody')[0]
 				.getElementsByTagName('tr');
