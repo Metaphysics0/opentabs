@@ -17,19 +17,20 @@ export class SearchService {
 
 	async call(): Promise<any> {
 		try {
-			const [songsterrResults, ultimateGuitarResults, guitarProOrgResults, guitarProNetResults] =
-				await Promise.all([
-					this.fetchResultsFromRepository(this.songsterrRepository),
-					this.fetchResultsFromRepository(this.ultimateGuitarRepository),
-					this.fetchResultsFromRepository(this.guitarProTabsOrgRepository),
-					this.fetchResultsFromRepository(this.guitarProTabsNetRepository)
-				]);
+			// const [songsterrResults, ultimateGuitarResults, guitarProOrgResults, guitarProNetResults] =
+			// await Promise.all([
+			// 	this.fetchResultsFromRepository(this.songsterrRepository),
+			// 	this.fetchResultsFromRepository(this.ultimateGuitarRepository),
+			// 	this.fetchResultsFromRepository(this.guitarProTabsOrgRepository),
+			// 	this.fetchResultsFromRepository(this.guitarProTabsNetRepository)
+			// ]);
 
 			return {
-				songsterrResults,
-				ultimateGuitarResults,
-				guitarProOrgResults,
-				guitarProNetResults
+				songsterrResults: await this.fetchResultsFromRepository(this.songsterrRepository),
+				// @ts-ignore
+				ultimateGuitarResults: await this.fetchResultsFromRepository(this.ultimateGuitarRepository)
+				// guitarProOrgResults,
+				// guitarProNetResults
 			};
 		} catch (error) {
 			console.error('Fetching results failed', error);
@@ -41,7 +42,7 @@ export class SearchService {
 		}
 	}
 
-	private async fetchResultsFromRepository(repository: ResourceRepository): Promise<any[]> {
+	private async fetchResultsFromRepository(repository: ResourceRepository) {
 		try {
 			return repository.search(this.searchQuery);
 		} catch (error) {
