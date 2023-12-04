@@ -17,9 +17,9 @@ export class SearchService {
 	async call(): Promise<any> {
 		try {
 			const results = await Promise.all([
-				this.fetchResultsFromRepository(this.songsterrRepository),
-				this.fetchResultsFromRepository(this.ultimateGuitarRepository),
-				this.fetchResultsFromRepository(this.guitarProTabsOrgRepository)
+				this.fetchResultsFromRepository(this.songsterrRepository)
+				// this.fetchResultsFromRepository(this.ultimateGuitarRepository),
+				// this.fetchResultsFromRepository(this.guitarProTabsOrgRepository)
 			]);
 
 			return results.flat();

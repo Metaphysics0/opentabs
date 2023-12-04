@@ -1,27 +1,36 @@
 <script lang="ts">
+	import { apiService } from '$lib/apiService';
+	import { originUrlMap } from '$lib/constants/origin-url';
+	import { triggerDownloadFromResponse } from '$lib/utils/triggerDownloadFromResponse';
 	import Icon from '@iconify/svelte';
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
 
 	export let searchResult: SearchResult;
 	export let index: number;
 
-	const iconMap = {
-		songsterr: '/assets/songsterr-logo.svg',
-		'ultimate-guitar': '/assets/ultimate-guitar-logo.svg',
-		'guitar-pro-tabs-net': '/',
-		'guitar-pro-tabs-org': '/'
-	};
-
-	const originTooltip: PopupSettings = {
-		event: 'hover',
-		target: `originTooltip-${index}`,
-		placement: 'top'
-	};
+	async function downloadTab() {
+		try {
+			const response = await apiService.download.fromSongsterr({
+				songId: searchResult!.metadata!.songId! as string,
+				songTitle: searchResult.songTitle,
+				artist: searchResult.artistName
+			});
+			triggerDownloadFromResponse(response);
+		} catch (error) {
+			console.error('error fetching', error);
+		}
+	}
 
 	const metadataTooltip: PopupSettings = {
 		event: 'hover',
 		target: `metadataTooltip-${index}`,
 		placement: 'top'
+	};
+
+	const downloadTooltip: PopupSettings = {
+		event: 'hover',
+		target: `downloadTooltip-${index}`,
+		placement: 'right'
 	};
 </script>
 
@@ -39,31 +48,29 @@
 		<p class="text-lg"></p>
 	</div>
 	<div class="flex items-center">
-		<img
-			use:popup={originTooltip}
-			class="opacity-50"
-			width="25"
-			height="25"
-			src={iconMap[searchResult.origin]}
-			alt={searchResult.origin + ' logo'}
-		/>
-		<div use:popup={metadataTooltip}>
-			<Icon class="mx-10" icon="material-symbols:info-outline" />
+		<div class="[&>*]:pointer-events-none mr-10" use:popup={metadataTooltip}>
+			<Icon class="text-2xl opacity-50" icon="material-symbols:info" />
 		</div>
-		<button class="btn-icon bg-blue-400 text-white text-2xl">
+		<button
+			class="btn-icon bg-blue-400 text-white text-2xl"
+			use:popup={downloadTooltip}
+			on:click={downloadTab}
+		>
 			<Icon icon="material-symbols:download" />
 		</button>
 	</div>
 </div>
 
-<!-- origin tooltip -->
-<div class="card p-4 variant-filled-secondary" data-popup={originTooltip.target}>
-	<p>{searchResult.origin}</p>
-	<div class="arrow variant-filled-secondary" />
+<!-- metadata toolitp -->
+<div class="card p-4 bg-white shadow variant-filled" data-popup={metadataTooltip.target}>
+	Origin: <a class="text-blue-500" href={searchResult.origin} target="_blank"
+		>{originUrlMap[searchResult.origin]}</a
+	>
+	<div class="arrow bg-white shadow" />
 </div>
 
-<!-- metadata toolitp -->
-<div class="card p-4 variant-filled-secondary" data-popup={metadataTooltip.target}>
-	Origin: <a href={searchResult.origin} target="_blank">{searchResult.originUrl}</a>
-	<div class="arrow variant-filled-secondary" />
+<!-- Download Tooltip -->
+<div class="card p-4 bg-white shadow variant-filled" data-popup={downloadTooltip.target}>
+	Download
+	<div class="arrow bg-white shadow" />
 </div>
