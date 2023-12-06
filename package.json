@@ -36,7 +36,6 @@
 	"type": "module",
 	"dependencies": {
 		"@floating-ui/dom": "^1.5.3",
-		"fakeyou.js": "^1.1.1",
 		"jsdom": "^23.0.1",
 		"lodash-es": "^4.17.21"
 	}

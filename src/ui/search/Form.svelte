@@ -45,7 +45,7 @@
 		type="text"
 		name="q"
 		required={true}
-		placeholder="Metallica"
+		placeholder="Playing God Polyphia"
 		on:keyup={debounceThenSubmit}
 		minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
 		min={MINIMUM_CHARATCERS_FOR_SEARCH}

@@ -1,5 +1,3 @@
-import { pick } from 'lodash-es';
-
 export const apiService = {
 	download: {
 		fromSongsterr: async (params: SongsterrDownloadParams): Promise<any> => {
@@ -12,9 +10,9 @@ export const apiService = {
 	}
 };
 
-const fetchAndReturnJson = async (args: IMakeApiArgs) => (await make(args)).json();
+const fetchAndReturnJson = async (args: MakeApiArgs) => (await make(args)).json();
 
-function make({ endpoint, method, params }: IMakeApiArgs): Promise<Response> {
+function make({ endpoint, method, params }: MakeApiArgs): Promise<Response> {
 	let url = `/api/v1/${endpoint}`;
 	if (method === 'GET' && params) {
 		url += '?' + new URLSearchParams(params as string).toString();
@@ -30,7 +28,7 @@ function make({ endpoint, method, params }: IMakeApiArgs): Promise<Response> {
 	return fetch(url, body ? { ...options, body } : options);
 }
 
-interface IMakeApiArgs {
+interface MakeApiArgs {
 	endpoint: string;
 	method: 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'OPTIONS';
 	params?: unknown;
