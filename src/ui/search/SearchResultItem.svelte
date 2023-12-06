@@ -29,7 +29,7 @@
 	}
 
 	const metadataTooltip: PopupSettings = {
-		event: 'click',
+		event: 'hover',
 		target: `metadataTooltip-${index}`,
 		placement: 'top'
 	};
@@ -55,16 +55,16 @@
 		<p class="text-lg"></p>
 	</div>
 	<div class="flex items-center">
-		<button
+		<!-- <button
 			class="btn-icon bg-slate-500 text-white h-min w-min mr-7"
 			use:popup={metadataTooltip}
 			on:click={downloadTab}
 		>
 			<Icon class="text-2xl" icon="uil:info" />
-		</button>
-		<!-- <div class="[&>*]:pointer-events-none mr-10" use:popup={metadataTooltip}>
+		</button> -->
+		<div class="[&>*]:pointer-events-none mr-10" use:popup={metadataTooltip}>
 			<Icon class="text-2xl opacity-50" icon="material-symbols:info" />
-		</div> -->
+		</div>
 		<button
 			class="btn-icon bg-blue-400 text-white text-2xl"
 			use:popup={downloadTooltip}

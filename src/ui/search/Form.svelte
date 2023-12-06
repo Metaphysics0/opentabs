@@ -10,6 +10,8 @@
 	let searchResults: SearchResult[] = [];
 	let searchQuery: string;
 
+	console.log('mock data', mockData);
+
 	const debounceThenSubmit = debounce((event: Event) => {
 		event.preventDefault();
 		const { value } = <HTMLTextAreaElement>event.target;
