@@ -3,7 +3,7 @@
 	export let resultsCount: number;
 </script>
 
-<div>
+<div class="text-xl">
 	<strong>
 		{resultsCount} results found
 	</strong>

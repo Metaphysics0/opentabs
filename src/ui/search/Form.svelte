@@ -3,14 +3,13 @@
 	import { mockData } from '$lib/constants/mockData';
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
 	import { HtmlInputUtils } from '$lib/utils/html-input';
+	import { searchResultsStore } from '../../stores/searchResults.store';
 	import ResultsFoundText from './ResultsFoundText.svelte';
 	import SearchResultItem from './SearchResultItem.svelte';
+	import ShowResultsFromFilter from './filters/ShowResultsFromFilter.svelte';
 	const { debounce } = new HtmlInputUtils();
 
-	let searchResults: SearchResult[] = [];
 	let searchQuery: string;
-
-	console.log('mock data', mockData);
 
 	const debounceThenSubmit = debounce((event: Event) => {
 		event.preventDefault();
@@ -20,13 +19,11 @@
 		if (value.length < MINIMUM_CHARATCERS_FOR_SEARCH) {
 			return;
 		}
-
-		// form.submit();
 	}, 150);
 
 	function setSearchResults(formResult: any) {
 		if (formResult?.data?.results) {
-			searchResults = formResult.data.results;
+			searchResultsStore.set(formResult.data.results);
 		}
 	}
 </script>
@@ -34,7 +31,7 @@
 <form
 	method="POST"
 	action="?/search"
-	class="flex justify-around items-center mb-3"
+	class="flex flex-col w-full mb-5"
 	use:enhance={({ formElement, formData, action, cancel, submitter }) => {
 		return async ({ result, update }) => {
 			setSearchResults(result);
@@ -42,23 +39,30 @@
 		};
 	}}
 >
-	<input
-		class="input mr-4 text-xl block w-full bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-center"
-		type="text"
-		name="q"
-		required={true}
-		placeholder="Playing God Polyphia"
-		on:keyup={debounceThenSubmit}
-		minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
-		min={MINIMUM_CHARATCERS_FOR_SEARCH}
-	/>
+	<div class="flex mb-2.5 w-full items-center">
+		<input
+			class="input mr-4 text-xl block w-full bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-center"
+			type="text"
+			name="q"
+			required={true}
+			placeholder="Playing God Polyphia"
+			on:keyup={debounceThenSubmit}
+			minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
+			min={MINIMUM_CHARATCERS_FOR_SEARCH}
+		/>
 
-	<button
-		type="submit"
-		class="text-lg flex items-center w-fit h-full px-2 py-1 font-semibold p-2 rounded-lg shadow-md transition duration-75 cursor-pointer bg-red-500 hover:bg-red-400 text-white disabled:bg-slate-5 disabled:hover:bg-slate-6 disabled:hover:cursor-not-allowed"
-	>
-		<span class="mr-0.5">Search</span>
-	</button>
+		<button
+			type="submit"
+			class="text-lg flex items-center w-fit h-full px-2 py-1 font-semibold p-2 rounded-lg shadow-md transition duration-75 cursor-pointer bg-red-500 hover:bg-red-400 text-white disabled:bg-slate-5 disabled:hover:bg-slate-6 disabled:hover:cursor-not-allowed"
+		>
+			<span class="mr-0.5">Search</span>
+		</button>
+	</div>
+
+	<div class="w-full">
+		<strong class="mb-1 block"> Show Results From: </strong>
+		<ShowResultsFromFilter />
+	</div>
 </form>
 
 {#if mockData.length}
