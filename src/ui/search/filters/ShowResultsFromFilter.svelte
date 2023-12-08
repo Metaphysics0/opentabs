@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { SupportedResources, humanizeResource } from '$lib/types/enums';
 
-	const filterOptions = Object.values(SupportedResources).map(humanizeResource);
+	const filterOptions = [SupportedResources.SONGSTERR, SupportedResources.ULTIMATE_GUITAR].map(
+		humanizeResource
+	);
 </script>
 
 <div class="flex justify-between">

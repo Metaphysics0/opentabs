@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { apiService } from '$lib/apiService';
 	import { originUrlMap } from '$lib/constants/origin-url';
+	import { SupportedResources } from '$lib/types/enums';
 	import { triggerDownloadFromResponse } from '$lib/utils/triggerDownloadFromResponse';
 	import Icon from '@iconify/svelte';
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
@@ -10,19 +11,20 @@
 
 	async function downloadTab() {
 		try {
-			const response = await apiService.download.fromSongsterr({
-				songId: searchResult!.metadata!.songId! as string,
-				songTitle: searchResult.songTitle,
-				artist: searchResult.artistName
-			});
-
-			if (response?.error) {
-				console.log('AHH');
-
-				throw new Error(response);
+			if (searchResult.origin === SupportedResources.SONGSTERR) {
+				const response = await apiService.download.fromSongsterr({
+					songId: searchResult!.metadata!.songId! as string,
+					songTitle: searchResult.songTitle,
+					artist: searchResult.artistName
+				});
+				triggerDownloadFromResponse(response);
 			}
 
-			triggerDownloadFromResponse(response);
+			// if (response?.error) {
+			// 	console.log('AHH');
+
+			// 	throw new Error(response);
+			// }
 		} catch (error) {
 			console.error('error fetching', error);
 		}

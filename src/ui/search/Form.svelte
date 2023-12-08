@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { mockData } from '$lib/constants/mockData';
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
 	import { HtmlInputUtils } from '$lib/utils/html-input';
 	import { searchResultsStore } from '../../stores/searchResults.store';
@@ -8,7 +7,6 @@
 	import ResultsFoundText from './ResultsFoundText.svelte';
 	import SearchResultItem from './SearchResultItem.svelte';
 	import ShowResultsFromFilter from './filters/ShowResultsFromFilter.svelte';
-	const { debounce } = new HtmlInputUtils();
 
 	let searchQuery: string;
 	let searchResults: SearchResult[];
@@ -20,6 +18,7 @@
 
 	function setSearchResults(formResult: any) {
 		const results = formResult?.data?.results;
+		searchQuery = formResult.data.searchQuery;
 		if (results) {
 			searchResultsStore.set(formResult.data.results);
 			noResultsReturned = false;
@@ -60,8 +59,8 @@
 		</button>
 	</div>
 
-	<div class="w-full">
-		<strong class="mb-1 block"> Show Results From: </strong>
+	<div class="w-full flex">
+		<strong class="mb-1 block"> Showing Results From: </strong>
 		<ShowResultsFromFilter />
 	</div>
 </form>
