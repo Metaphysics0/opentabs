@@ -17,6 +17,7 @@ export const actions: Actions = {
 			const cachedSearchResults = await redisDal.getSearchResultsFromSearchQuery(searchQuery);
 			if (cachedSearchResults) {
 				return {
+					searchQuery,
 					results: cachedSearchResults
 				};
 			}
@@ -25,6 +26,7 @@ export const actions: Actions = {
 			await redisDal.setSearchResultsFromSearchQuery(searchQuery, searchResults);
 
 			return {
+				searchQuery,
 				results: searchResults
 			};
 		} catch (error) {

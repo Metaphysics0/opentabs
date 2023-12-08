@@ -4,26 +4,28 @@
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
 	import { HtmlInputUtils } from '$lib/utils/html-input';
 	import { searchResultsStore } from '../../stores/searchResults.store';
+	import NoResultsPlaceholder from './NoResultsPlaceholder.svelte';
 	import ResultsFoundText from './ResultsFoundText.svelte';
 	import SearchResultItem from './SearchResultItem.svelte';
 	import ShowResultsFromFilter from './filters/ShowResultsFromFilter.svelte';
 	const { debounce } = new HtmlInputUtils();
 
 	let searchQuery: string;
+	let searchResults: SearchResult[];
+	let noResultsReturned: boolean = false;
 
-	const debounceThenSubmit = debounce((event: Event) => {
-		event.preventDefault();
-		const { value } = <HTMLTextAreaElement>event.target;
-		searchQuery = value;
-
-		if (value.length < MINIMUM_CHARATCERS_FOR_SEARCH) {
-			return;
-		}
-	}, 150);
+	searchResultsStore.subscribe((results) => {
+		searchResults = results;
+	});
 
 	function setSearchResults(formResult: any) {
-		if (formResult?.data?.results) {
+		const results = formResult?.data?.results;
+		if (results) {
 			searchResultsStore.set(formResult.data.results);
+			noResultsReturned = false;
+		}
+		if (results.length === 0) {
+			noResultsReturned = true;
 		}
 	}
 </script>
@@ -46,7 +48,6 @@
 			name="q"
 			required={true}
 			placeholder="Playing God Polyphia"
-			on:keyup={debounceThenSubmit}
 			minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
 			min={MINIMUM_CHARATCERS_FOR_SEARCH}
 		/>
@@ -65,10 +66,14 @@
 	</div>
 </form>
 
-{#if mockData.length}
-	<ResultsFoundText {searchQuery} resultsCount={mockData.length} />
+{#if searchResults.length}
+	<ResultsFoundText {searchQuery} resultsCount={searchResults.length} />
 {/if}
 
-{#each mockData as searchResult, index}
+{#each searchResults as searchResult, index}
 	<SearchResultItem {searchResult} {index} />
 {/each}
+
+{#if !searchResults.length}
+	<NoResultsPlaceholder withActiveSearch={noResultsReturned} />
+{/if}
