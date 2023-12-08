@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import { sampleSearchResults } from '$lib/constants/sampleSearchResults';
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
-	import { HtmlInputUtils } from '$lib/utils/html-input';
 	import { searchResultsStore } from '../../stores/searchResults.store';
 	import NoResultsPlaceholder from './NoResultsPlaceholder.svelte';
 	import ResultsFoundText from './ResultsFoundText.svelte';
@@ -10,6 +10,7 @@
 
 	let searchQuery: string;
 	let searchResults: SearchResult[];
+
 	let noResultsReturned: boolean = false;
 
 	searchResultsStore.subscribe((results) => {

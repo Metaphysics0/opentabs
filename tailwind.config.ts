@@ -20,7 +20,7 @@ const config = {
 		// 4. Append the Skeleton plugin (after other plugins)
 		formsPlugin,
 		skeleton({
-			themes: {}
+			themes: { preset: ['skeleton', 'gold-nouveau'] }
 		})
 	]
 } satisfies Config;

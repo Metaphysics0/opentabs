@@ -47,7 +47,7 @@
 	<div class="flex">
 		<p>
 			<strong class="font-medium">
-				{searchResult.songTitle},
+				{searchResult.songTitle}
 			</strong>
 			<span class="mx-1 font-light text-slate-700"> by </span>
 			<strong class="font-medium">
@@ -57,13 +57,6 @@
 		<p class="text-lg"></p>
 	</div>
 	<div class="flex items-center">
-		<!-- <button
-			class="btn-icon bg-slate-500 text-white h-min w-min mr-7"
-			use:popup={metadataTooltip}
-			on:click={downloadTab}
-		>
-			<Icon class="text-2xl" icon="uil:info" />
-		</button> -->
 		<div class="[&>*]:pointer-events-none mr-10" use:popup={metadataTooltip}>
 			<Icon class="text-2xl opacity-50" icon="material-symbols:info" />
 		</div>
@@ -78,7 +71,7 @@
 </div>
 
 <!-- metadata toolitp -->
-<div class="card p-4 bg-white shadow variant-filled" data-popup={metadataTooltip.target}>
+<div class="card p-4 bg-white shadow" data-popup={metadataTooltip.target}>
 	Origin: <a class="text-blue-500" href={searchResult.origin} target="_blank"
 		>{originUrlMap[searchResult.origin]}</a
 	>
@@ -86,7 +79,7 @@
 </div>
 
 <!-- Download Tooltip -->
-<div class="card p-4 bg-white shadow variant-filled" data-popup={downloadTooltip.target}>
+<div class="card p-4 bg-white shadow" data-popup={downloadTooltip.target}>
 	Download
 	<div class="arrow bg-white shadow" />
 </div>
