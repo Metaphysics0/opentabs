@@ -36,7 +36,9 @@
 	"type": "module",
 	"dependencies": {
 		"@floating-ui/dom": "^1.5.3",
+		"@upstash/redis": "^1.25.1",
 		"jsdom": "^23.0.1",
-		"lodash-es": "^4.17.21"
+		"lodash-es": "^4.17.21",
+		"redis": "^4.6.11"
 	}
 }
