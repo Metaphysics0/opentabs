@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { apiService } from '$lib/apiService';
 	import { originUrlMap } from '$lib/constants/origin-url';
-	import { SupportedResources } from '$lib/types/enums';
 	import { triggerDownloadFromResponse } from '$lib/utils/triggerDownloadFromResponse';
 	import Icon from '@iconify/svelte';
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
+
+	import { getToastStore } from '@skeletonlabs/skeleton';
+	const toastStore = getToastStore();
 
 	export let searchResult: SearchResult;
 	export let index: number;
@@ -12,27 +14,16 @@
 	async function downloadTab() {
 		try {
 			const response = await apiService.download.fromAny(searchResult);
+			if (response.error) {
+				toastStore.trigger({
+					message: 'Error downloading tab 😭',
+					background: 'variant-filled-error'
+				});
+			}
+
 			if (response) {
-				console.log('download response:', response);
 				triggerDownloadFromResponse(response);
 			}
-			// if (searchResult.origin === SupportedResources.SONGSTERR) {
-			// 	const response = await apiService.download.fromSongsterr({
-			// 		songId: searchResult!.metadata!.songId! as string,
-			// 		songTitle: searchResult.songTitle,
-			// 		artist: searchResult.artistName
-			// 	});
-			// 	triggerDownloadFromResponse(response);
-			// 	return;
-			// }
-
-			// if (searchResult.origin === SupportedResources.ULTIMATE_GUITAR) {
-			// 	const response = await apiService.download.fromUltimateGuitar({
-			// 		searchResult
-			// 	});
-			// 	triggerDownloadFromResponse(response);
-			// 	return;
-			// }
 		} catch (error) {
 			console.error('error fetching', error);
 		}

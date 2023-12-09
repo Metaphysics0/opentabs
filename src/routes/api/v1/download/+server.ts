@@ -1,4 +1,3 @@
-// import { DOWNLOAD_API_ENDPOINT } from '$env/static/private';
 import { DownloadService } from '$lib/server/services/download.service';
 import { json, type RequestHandler } from '@sveltejs/kit';
 

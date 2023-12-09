@@ -8,9 +8,7 @@ export class UltimateGuitarRepository extends BaseRepository implements Resource
 			const document = await this.scraper.fetchAndGetDocument(url);
 			const searchResults = this.getSearchResultsFromDocument(document);
 
-			return searchResults
-				.map(this.convertDataToSearchResultSchema)
-				.filter(this.isValidSearchResult);
+			return searchResults.map(this.convertDataToSearchResultSchema);
 		} catch (error) {
 			this.logSearchError(error);
 			return [];

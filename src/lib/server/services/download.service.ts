@@ -4,11 +4,11 @@ import { SupportedResources } from '$lib/types/enums';
 
 export class DownloadService {
 	searchResult: SearchResult;
-	fetcher: typeof fetch;
+	fetch: typeof fetch;
 
 	constructor({ searchResult, fetchImp }: { searchResult: SearchResult; fetchImp?: typeof fetch }) {
 		this.searchResult = searchResult;
-		this.fetcher = fetchImp || fetch;
+		this.fetch = fetchImp || fetch;
 
 		if (!this.SUPPORTED_SEARCH_RESULT_ORIGINS.includes(this.searchResult.origin)) {
 			throw new Error(
@@ -19,7 +19,7 @@ export class DownloadService {
 
 	async download() {
 		try {
-			const response = await this.fetcher(this.endpoint!, {
+			const response = await this.fetch(this.endpoint!, {
 				method: 'POST',
 				body: JSON.stringify(this.params)
 			});
@@ -27,11 +27,6 @@ export class DownloadService {
 		} catch (error) {
 			console.error(`Error downloading: ${this.searchResult}`);
 		}
-	}
-
-	private get endpoint() {
-		if (this.isSongsterr) return DOWNLOAD_API_HOST + '/bySearchResult';
-		if (this.isUltimateGuitar) return DOWNLOAD_API_HOST + '/ultimate-guitar';
 	}
 
 	private get params() {
@@ -49,6 +44,18 @@ export class DownloadService {
 				byLinkUrl: this.searchResult.originUrl
 			} as UltimateGuitarDownloadParams;
 		}
+		if (this.isGuitarProTabsOrg) {
+			return {
+				songTitle: this.searchResult.songTitle,
+				originUrl: this.searchResult.originUrl
+			};
+		}
+	}
+
+	private get endpoint() {
+		if (this.isSongsterr) return DOWNLOAD_API_HOST + '/bySearchResult';
+		if (this.isUltimateGuitar) return DOWNLOAD_API_HOST + '/ultimate-guitar';
+		if (this.isGuitarProTabsOrg) return DOWNLOAD_API_HOST + '/byDownloadLink';
 	}
 
 	private get isSongsterr() {
@@ -57,9 +64,13 @@ export class DownloadService {
 	private get isUltimateGuitar() {
 		return this.searchResult.origin === 'ultimate-guitar';
 	}
+	private get isGuitarProTabsOrg() {
+		return this.searchResult.origin === 'guitar-pro-tabs-org';
+	}
 
 	private SUPPORTED_SEARCH_RESULT_ORIGINS = [
 		String(SupportedResources.ULTIMATE_GUITAR),
-		String(SupportedResources.SONGSTERR)
+		String(SupportedResources.SONGSTERR),
+		String(SupportedResources.GUITAR_PRO_TABS_ORG)
 	];
 }

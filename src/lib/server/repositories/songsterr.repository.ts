@@ -8,9 +8,9 @@ export class SongsterrRepository extends BaseRepository implements ResourceRepos
 			const response = await this.scraper.fetchWithRandomUserAgent(url);
 			const searchResults = (await response.json()) as SongsterrSearchResult[];
 
-			return searchResults
-				.map((searchResult) => this.convertDataToSearchResultSchema(searchResult, searchText))
-				.filter(this.isValidSearchResult);
+			return searchResults.map((searchResult) =>
+				this.convertDataToSearchResultSchema(searchResult, searchText)
+			);
 		} catch (error) {
 			this.logSearchError(error);
 			return [];

@@ -23,7 +23,10 @@ export const actions: Actions = {
 			}
 
 			const searchResults = await new SearchService({ searchQuery }).call();
-			await redisDal.setSearchResultsFromSearchQuery(searchQuery, searchResults);
+
+			if (searchResults.length) {
+				await redisDal.setSearchResultsFromSearchQuery(searchQuery, searchResults);
+			}
 
 			return {
 				searchQuery,

@@ -39,6 +39,8 @@
 	class="flex flex-col w-full mb-5"
 	use:enhance={({ formElement, formData, action, cancel, submitter }) => {
 		return async ({ result, update }) => {
+			console.log('RESULT', result);
+
 			setSearchResults(result);
 			await update({ reset: false });
 		};
