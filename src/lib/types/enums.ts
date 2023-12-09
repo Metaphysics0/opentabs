@@ -5,10 +5,11 @@ export enum SupportedResources {
 	GUITAR_PRO_TABS_ORG = 'guitar-pro-tabs-org'
 }
 
-export function humanizeResource(resource: SupportedResources): {
+export function createInputPropertiesFromResource(resource: SupportedResources): {
 	label: string;
 	website: string;
 	value: string;
+	checked?: boolean;
 } {
 	const resourceHumanizer = {
 		[SupportedResources.ULTIMATE_GUITAR]: {

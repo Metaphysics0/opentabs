@@ -1,12 +1,26 @@
 export const apiService = {
 	download: {
-		fromSongsterr: async (params: SongsterrDownloadParams): Promise<any> => {
+		fromAny: async (searchResult: SearchResult): Promise<any> => {
 			return fetchAndReturnJson({
-				endpoint: 'download/songsterr',
+				endpoint: 'download',
 				method: 'POST',
-				params
+				params: { searchResult }
 			});
 		}
+		// fromSongsterr: async (searchResult): Promise<any> => {
+		// 	return fetchAndReturnJson({
+		// 		endpoint: 'download/songsterr',
+		// 		method: 'POST',
+		// 		params
+		// 	});
+		// },
+		// fromUltimateGuitar: async (params: any): Promise<any> => {
+		// 	return fetchAndReturnJson({
+		// 		endpoint: 'download',
+		// 		method: 'POST',
+		// 		params
+		// 	});
+		// }
 	}
 };
 

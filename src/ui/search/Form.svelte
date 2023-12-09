@@ -12,6 +12,7 @@
 	let searchResults: SearchResult[];
 
 	let noResultsReturned: boolean = false;
+	let shouldShowResultsFoundText = false;
 
 	searchResultsStore.subscribe((results) => {
 		searchResults = results;
@@ -23,9 +24,11 @@
 		if (results) {
 			searchResultsStore.set(formResult.data.results);
 			noResultsReturned = false;
+			shouldShowResultsFoundText = true;
 		}
 		if (results.length === 0) {
 			noResultsReturned = true;
+			shouldShowResultsFoundText = false;
 		}
 	}
 </script>
@@ -60,13 +63,13 @@
 		</button>
 	</div>
 
-	<div class="w-full flex">
+	<div class="w-full flex justify-between">
 		<strong class="mb-1 block"> Showing Results From: </strong>
 		<ShowResultsFromFilter />
 	</div>
 </form>
 
-{#if searchResults.length}
+{#if shouldShowResultsFoundText}
 	<ResultsFoundText {searchQuery} resultsCount={searchResults.length} />
 {/if}
 

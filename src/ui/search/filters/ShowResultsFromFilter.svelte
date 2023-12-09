@@ -1,19 +1,21 @@
 <script lang="ts">
-	import { SupportedResources, humanizeResource } from '$lib/types/enums';
+	import { SupportedResources, createInputPropertiesFromResource } from '$lib/types/enums';
 
-	// const filterOptions = [SupportedResources.SONGSTERR, SupportedResources.ULTIMATE_GUITAR].map(
-	// 	humanizeResource
-	// );
-	const filterOptions = [
-		{ label: 'filter 1', value: 'filter 1' },
-		{ label: 'filter 2', value: 'filter 2' }
-	];
+	const filterOptions = [SupportedResources.SONGSTERR, SupportedResources.ULTIMATE_GUITAR]
+		.map(createInputPropertiesFromResource)
+		.map((filterOption) => ({ ...filterOption, checked: true }));
 </script>
 
 <div class="flex justify-between">
 	{#each filterOptions as filterOption}
-		<label class="flex items-center space-x-2">
-			<input class="checkbox" type="checkbox" value={filterOption.value} />
+		<label class="flex items-center space-x-2 mx-4">
+			<input
+				class="checkbox disabled:opacity-30 cursor-not-allowed"
+				type="checkbox"
+				disabled={true}
+				checked={!!filterOption.checked}
+				value={filterOption.value}
+			/>
 			<p>{filterOption.label}</p>
 		</label>
 	{/each}

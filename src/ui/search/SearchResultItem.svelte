@@ -11,19 +11,27 @@
 
 	async function downloadTab() {
 		try {
-			if (searchResult.origin === SupportedResources.SONGSTERR) {
-				const response = await apiService.download.fromSongsterr({
-					songId: searchResult!.metadata!.songId! as string,
-					songTitle: searchResult.songTitle,
-					artist: searchResult.artistName
-				});
+			const response = await apiService.download.fromAny(searchResult);
+			if (response) {
+				console.log('download response:', response);
 				triggerDownloadFromResponse(response);
 			}
+			// if (searchResult.origin === SupportedResources.SONGSTERR) {
+			// 	const response = await apiService.download.fromSongsterr({
+			// 		songId: searchResult!.metadata!.songId! as string,
+			// 		songTitle: searchResult.songTitle,
+			// 		artist: searchResult.artistName
+			// 	});
+			// 	triggerDownloadFromResponse(response);
+			// 	return;
+			// }
 
-			// if (response?.error) {
-			// 	console.log('AHH');
-
-			// 	throw new Error(response);
+			// if (searchResult.origin === SupportedResources.ULTIMATE_GUITAR) {
+			// 	const response = await apiService.download.fromUltimateGuitar({
+			// 		searchResult
+			// 	});
+			// 	triggerDownloadFromResponse(response);
+			// 	return;
 			// }
 		} catch (error) {
 			console.error('error fetching', error);
