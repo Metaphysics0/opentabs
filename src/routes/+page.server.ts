@@ -1,18 +1,42 @@
 import { SearchService } from '$lib/server/services/search.service';
 import { ParamsHelper } from '$lib/server/utils/paramsHelper';
 import type { Actions } from '@sveltejs/kit';
+import { RedisDal } from '../server/redis/dal';
 
 export const actions: Actions = {
 	search: async ({ request }) => {
-		const formData = await request.formData();
-		const searchQuery = new ParamsHelper().getRequiredFormDataParam<string>({
-			formData,
-			paramName: 'q',
-			paramType: 'string'
-		});
+		try {
+			const formData = await request.formData();
+			const searchQuery = new ParamsHelper().getRequiredFormDataParam<string>({
+				formData,
+				paramName: 'q',
+				paramType: 'string'
+			});
 
-		return {
-			results: await new SearchService({ searchQuery }).call()
-		};
+			const redisDal = new RedisDal();
+			const cachedSearchResults = await redisDal.getSearchResultsFromSearchQuery(searchQuery);
+			if (cachedSearchResults) {
+				return {
+					searchQuery,
+					results: cachedSearchResults
+				};
+			}
+
+			const searchResults = await new SearchService({ searchQuery }).call();
+
+			if (searchResults.length) {
+				await redisDal.setSearchResultsFromSearchQuery(searchQuery, searchResults);
+			}
+
+			return {
+				searchQuery,
+				results: searchResults
+			};
+		} catch (error) {
+			console.error('Search action failed:', error);
+			return {
+				results: []
+			};
+		}
 	}
 };

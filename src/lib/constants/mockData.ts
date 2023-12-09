@@ -1,3 +1,2307 @@
-export const mockSearchResults = JSON.parse(
-	'[{"results":1},[2,39,51,71,87,99,116,136,148,168,179,187,198,209,222,233,250,261,270,284,303,314,327,338,349,360,371,388,402,413,421,435,443,457,468,476,506,517,525,536,544,560,568,578,586,594,602,613,623,631,642,659,670,686,695,702,713,721,733,740,750,761,770,793,806,813,819,828,837,845,856,863,871,880,890,900,906,914,921,929,938,945,956,964,972,979,986,998,1004,1011,1017,1025,1032,1043,1050,1057,1065,1077,1084,1089,1096,1104,1111,1119,1127,1136,1145,1153,1162,1173,1182,1191,1198,1207,1214,1227,1234,1242,1250,1260,1267,1274,1285,1292,1302,1309,1317,1324,1330,1336,1342],{"artistName":3,"songTitle":4,"originUrl":5,"origin":6,"metadata":7},"Chon","Bubble Dream (Tab Book Version)","https://www.songsterr.com/?pattern=chon","songsterr",{"hasPlayer":8,"artist":3,"artistId":9,"title":4,"songId":10,"tracks":11,"hasChords":37,"defaultTrack":38},true,17625,399672,[12,23,26,31,34],{"difficulty":13,"tuning":14,"instrumentId":21,"views":22},"EASY",[15,16,17,18,19,20],64,59,55,50,45,40,27,6.71164662,{"difficulty":13,"tuning":24,"instrumentId":21,"views":25},[15,16,17,18,19,20],0.77170629,{"difficulty":27,"tuning":28,"instrumentId":29,"views":30},"BELOW_INTERMEDIATE",[15,16,17,18,19,20],29,2.0400859499999995,{"difficulty":27,"tuning":32,"instrumentId":29,"views":33},[15,16,17,18,19,20],0.4599,{"difficulty":13,"tuning":35,"instrumentId":29,"views":36},[15,16,17,18,19,20],1.7838908699999998,false,0,{"artistName":3,"songTitle":40,"originUrl":5,"origin":6,"metadata":41},"Fluffy",{"hasPlayer":8,"artist":3,"artistId":9,"title":40,"songId":42,"tracks":43,"hasChords":37,"defaultTrack":38},399673,[44,48],{"difficulty":45,"tuning":46,"instrumentId":21,"views":47},"HARD",[15,16,17,18,19,20],10.925211678063876,{"difficulty":45,"tuning":49,"instrumentId":21,"views":50},[15,16,17,18,19,20],0.5900257810628966,{"artistName":3,"songTitle":52,"originUrl":5,"origin":6,"metadata":53},"Waterslide",{"hasPlayer":8,"artist":3,"artistId":9,"title":52,"songId":54,"tracks":55,"hasChords":37,"defaultTrack":38},434770,[56,59,62,64],{"difficulty":27,"tuning":57,"instrumentId":21,"views":58},[15,16,17,18,19,20],4.23275249331979,{"difficulty":27,"tuning":60,"instrumentId":21,"views":61},[15,16,17,18,19,20],0.8377320935370898,{"instrumentId":63,"views":38},1024,{"tuning":65,"instrumentId":68,"views":38},[66,67,68,69,70],43,38,33,28,23,{"artistName":3,"songTitle":72,"originUrl":5,"origin":6,"metadata":73},"Dew (Tab Book Version)",{"hasPlayer":8,"artist":3,"artistId":9,"title":72,"songId":74,"tracks":75,"hasChords":37,"defaultTrack":38},399675,[76,79,83],{"difficulty":45,"tuning":77,"instrumentId":21,"views":78},[15,16,17,18,19,20],3.1607962103798526,{"difficulty":80,"tuning":81,"instrumentId":21,"views":82},"VERY_HARD",[15,16,17,18,19,20],1.563793784309461,{"difficulty":84,"tuning":85,"instrumentId":21,"views":86},"UPPER_INTERMEDIATE",[15,16,17,18,19,20],7.010496486318968e-15,{"artistName":3,"songTitle":88,"originUrl":5,"origin":6,"metadata":89},"Story 2",{"hasPlayer":8,"artist":3,"artistId":9,"title":88,"songId":90,"tracks":91,"hasChords":37,"defaultTrack":38},424549,[92,96],{"difficulty":93,"tuning":94,"instrumentId":21,"views":95},"INTERMEDIATE",[15,16,17,18,19,20],3.2540525675758274,{"difficulty":27,"tuning":97,"instrumentId":21,"views":98},[15,16,17,18,19,20],0.035565812904434904,{"artistName":3,"songTitle":100,"originUrl":5,"origin":6,"metadata":101},"Perfect Pillow",{"hasPlayer":8,"artist":3,"artistId":9,"title":100,"songId":102,"tracks":103,"hasChords":37,"defaultTrack":115},548473,[104,107,110,113],{"difficulty":84,"tuning":105,"instrumentId":29,"views":106},[15,16,17,18,19,20],0.3437839019999999,{"difficulty":45,"tuning":108,"instrumentId":29,"views":109},[15,16,17,18,19,20],0.6542963366582998,{"tuning":111,"instrumentId":68,"views":112},[66,67,68,69],0.9648339802289999,{"instrumentId":63,"views":114},0.6430944029999999,2,{"artistName":3,"songTitle":117,"originUrl":5,"origin":6,"metadata":118},"Pitch Dark Alternative",{"hasPlayer":8,"artist":3,"artistId":9,"title":117,"songId":119,"tracks":120,"hasChords":37,"defaultTrack":135},453078,[121,125,128,132],{"difficulty":13,"tuning":122,"instrumentId":123,"views":124},[15,16,17,18,19,20],25,0.04203050831586891,{"difficulty":13,"tuning":126,"instrumentId":123,"views":127},[15,16,17,18,19,20],1.1074903712764648,{"difficulty":27,"tuning":129,"instrumentId":130,"views":131},[15,16,17,18,19,20],26,0.7141466968567293,{"difficulty":27,"tuning":133,"instrumentId":130,"views":134},[15,16,17,18,19,20],0.30348819457802395,1,{"artistName":3,"songTitle":137,"originUrl":5,"origin":6,"metadata":138},"Mountains Of Creation",{"hasPlayer":8,"artist":3,"artistId":9,"title":137,"songId":139,"tracks":140,"hasChords":37,"defaultTrack":38},87500,[141,145],{"difficulty":80,"tuning":142,"instrumentId":143,"views":144},[15,16,17,18,19,20],30,1.9913281322833722,{"difficulty":80,"tuning":146,"instrumentId":143,"views":147},[15,16,17,18,19,20],0.01729440331191308,{"artistName":3,"songTitle":149,"originUrl":5,"origin":6,"metadata":150},"Sleepy Tea V3",{"hasPlayer":8,"artist":3,"artistId":9,"title":149,"songId":151,"tracks":152,"hasChords":37,"defaultTrack":38},442551,[153,156,159,162,165],{"difficulty":84,"tuning":154,"instrumentId":130,"views":155},[15,16,17,18,19,20],1.3709100415326998,{"difficulty":84,"tuning":157,"instrumentId":130,"views":158},[15,16,17,18,19,20],0.3654766088709215,{"tuning":160,"instrumentId":68,"views":161},[66,67,68,69,70],0.147,{"difficulty":84,"tuning":163,"instrumentId":29,"views":164},[15,16,17,18,19,20],0.002906670312393738,{"difficulty":27,"tuning":166,"instrumentId":29,"views":167},[15,16,17,18,19,20],4.522583599009038e-22,{"artistName":3,"songTitle":169,"originUrl":5,"origin":6,"metadata":170},"Og",{"hasPlayer":8,"artist":3,"artistId":9,"title":169,"songId":171,"tracks":172,"hasChords":37,"defaultTrack":38},379498,[173,176],{"difficulty":84,"tuning":174,"instrumentId":143,"views":175},[15,16,17,18,19,20],1.8738887140268288,{"difficulty":93,"tuning":177,"instrumentId":143,"views":178},[15,16,17,18,19,20],0.010573165351014827,{"artistName":3,"songTitle":180,"originUrl":5,"origin":6,"metadata":181},"Dust",{"hasPlayer":8,"artist":3,"artistId":9,"title":180,"songId":182,"tracks":183,"hasChords":37,"defaultTrack":38},389996,[184],{"difficulty":93,"tuning":185,"instrumentId":123,"views":186},[15,16,17,18,19,20],1.5125234725053167,{"artistName":3,"songTitle":188,"originUrl":5,"origin":6,"metadata":189},"No Signal 2",{"hasPlayer":8,"artist":3,"artistId":9,"title":188,"songId":190,"tracks":191,"hasChords":37,"defaultTrack":135},452691,[192,195],{"difficulty":27,"tuning":193,"instrumentId":21,"views":194},[15,16,17,18,19,20],0.6000000128659981,{"difficulty":27,"tuning":196,"instrumentId":21,"views":197},[15,16,17,18,19,20],0.6369640195609866,{"artistName":3,"songTitle":199,"originUrl":5,"origin":6,"metadata":200},"The Space New Versin",{"hasPlayer":8,"artist":3,"artistId":9,"title":199,"songId":201,"tracks":202,"hasChords":37,"defaultTrack":38},437929,[203,206],{"difficulty":27,"tuning":204,"instrumentId":130,"views":205},[15,16,17,18,19,20],1.2242320889124845,{"difficulty":84,"tuning":207,"instrumentId":130,"views":208},[15,16,17,18,19,20],1.8506205288841808e-9,{"artistName":3,"songTitle":210,"originUrl":5,"origin":6,"metadata":211},"No Signal",{"hasPlayer":8,"artist":3,"artistId":9,"title":210,"songId":212,"tracks":213,"hasChords":37,"defaultTrack":135},449241,[214,217,220],{"difficulty":93,"tuning":215,"instrumentId":21,"views":216},[15,16,17,18,19,20],0.07759164920017793,{"difficulty":93,"tuning":218,"instrumentId":21,"views":219},[15,16,17,18,19,20],0.950563727039192,{"instrumentId":63,"views":221},0.017294402999999993,{"artistName":3,"songTitle":223,"originUrl":5,"origin":6,"metadata":224},"Elliptical Illuminations",{"hasPlayer":8,"artist":3,"artistId":9,"title":223,"songId":225,"tracks":226,"hasChords":37,"defaultTrack":38},87499,[227,230],{"difficulty":80,"tuning":228,"instrumentId":29,"views":229},[15,16,17,18,19,20],0.9036877964826417,{"difficulty":80,"tuning":231,"instrumentId":29,"views":232},[15,16,17,18,19,20],0.00006776969380190333,{"artistName":3,"songTitle":234,"originUrl":5,"origin":6,"metadata":235},"Suda (Grow)",{"hasPlayer":8,"artist":3,"artistId":9,"title":234,"songId":236,"tracks":237,"hasChords":37,"defaultTrack":135},397472,[238,241,244,248],{"difficulty":93,"tuning":239,"instrumentId":130,"views":240},[15,16,17,18,19,20],0.004861930731405086,{"difficulty":45,"tuning":242,"instrumentId":130,"views":243},[15,16,17,18,19,20],0.7316400546541137,{"tuning":245,"instrumentId":246,"views":247},[66,67,68,69],34,0.00023958259188788285,{"instrumentId":63,"views":249},0.1517591481364044,{"artistName":3,"songTitle":251,"originUrl":5,"origin":6,"metadata":252},"Knot 2",{"hasPlayer":8,"artist":3,"artistId":9,"title":251,"songId":253,"tracks":254,"hasChords":37,"defaultTrack":38},424551,[255,258],{"difficulty":80,"tuning":256,"instrumentId":130,"views":257},[15,16,17,18,19,20],0.8520746874754737,{"difficulty":93,"tuning":259,"instrumentId":130,"views":260},[15,16,17,18,19,20],0.01853097834639177,{"artistName":3,"songTitle":262,"originUrl":5,"origin":6,"metadata":263},"shashank exercise",{"hasPlayer":8,"artist":3,"artistId":9,"title":262,"songId":264,"tracks":265,"hasChords":37,"defaultTrack":38},496345,[266],{"difficulty":93,"tuning":267,"instrumentId":268,"views":269},[15,16,17,18,19,20],24,0.8539366148786497,{"artistName":3,"songTitle":271,"originUrl":5,"origin":6,"metadata":272},"Checkpoint",{"hasPlayer":8,"artist":3,"artistId":9,"title":271,"songId":273,"tracks":274,"hasChords":37,"defaultTrack":38},435195,[275,278,281],{"difficulty":27,"tuning":276,"instrumentId":21,"views":277},[15,16,17,18,19,20],0.6121897197445864,{"difficulty":27,"tuning":279,"instrumentId":21,"views":280},[15,16,17,18,19,20],0.00006028712114016014,{"difficulty":80,"tuning":282,"instrumentId":21,"views":283},[15,16,17,18,19,20],0.0000047332614610453645,{"artistName":285,"songTitle":286,"originUrl":5,"origin":6,"metadata":287},"Cheech And Chong","Earache My Eye",{"hasPlayer":8,"artist":285,"artistId":288,"title":286,"songId":289,"tracks":290,"hasChords":37,"defaultTrack":38},1343,4370,[291,294,298,301],{"difficulty":93,"tuning":292,"instrumentId":143,"views":293},[15,16,17,18,19,20],0.44031570185882773,{"tuning":295,"instrumentId":296,"views":297},[66,67,68,69],36,0.072120191756845,{"difficulty":93,"tuning":299,"instrumentId":143,"views":300},[15,16,17,18,19,20],0.07058976645514871,{"instrumentId":63,"views":302},7.235595226900788e-13,{"artistName":3,"songTitle":304,"originUrl":5,"origin":6,"metadata":305},"Sleepy Tea",{"hasPlayer":8,"artist":3,"artistId":9,"title":304,"songId":306,"tracks":307,"hasChords":37,"defaultTrack":38},433112,[308,311],{"difficulty":93,"tuning":309,"instrumentId":130,"views":310},[15,16,17,18,19,20],0.5123850743058791,{"difficulty":27,"tuning":312,"instrumentId":130,"views":313},[15,16,17,18,19,20],0.01772331433598194,{"artistName":3,"songTitle":315,"originUrl":5,"origin":6,"metadata":316},"Puddle Solo",{"hasPlayer":8,"artist":3,"artistId":9,"title":315,"songId":317,"tracks":318,"hasChords":37,"defaultTrack":135},397924,[319,322,325],{"difficulty":27,"tuning":320,"instrumentId":29,"views":321},[15,16,17,18,19,20],0.024706290002109506,{"difficulty":80,"tuning":323,"instrumentId":29,"views":324},[15,16,17,18,19,20],0.49381323724653275,{"instrumentId":63,"views":326},3.1103379228956417e-10,{"artistName":3,"songTitle":328,"originUrl":5,"origin":6,"metadata":329},"Ecco",{"hasPlayer":8,"artist":3,"artistId":9,"title":328,"songId":330,"tracks":331,"hasChords":37,"defaultTrack":38},389314,[332,335],{"difficulty":27,"tuning":333,"instrumentId":130,"views":334},[15,16,17,18,19,20],0.44257541317063714,{"difficulty":336,"tuning":337,"instrumentId":130,"views":38},"INSANE",[15,16,17,18,19,20],{"artistName":3,"songTitle":339,"originUrl":5,"origin":6,"metadata":340},"Across The Spectrum",{"hasPlayer":8,"artist":3,"artistId":9,"title":339,"songId":341,"tracks":342,"hasChords":37,"defaultTrack":38},395345,[343,346],{"difficulty":336,"tuning":344,"instrumentId":29,"views":345},[15,16,17,18,19,20],0.3589638445068734,{"difficulty":336,"tuning":347,"instrumentId":29,"views":348},[15,16,17,18,19,20],0.07203595611991266,{"artistName":3,"songTitle":350,"originUrl":5,"origin":6,"metadata":351},"Wave Bounce",{"hasPlayer":8,"artist":3,"artistId":9,"title":350,"songId":352,"tracks":353,"hasChords":37,"defaultTrack":38},436415,[354,357],{"difficulty":45,"tuning":355,"instrumentId":21,"views":356},[15,16,17,18,19,20],0.3015729371907893,{"difficulty":45,"tuning":358,"instrumentId":21,"views":359},[15,16,17,18,19,20],0.09215147840389425,{"artistName":3,"songTitle":361,"originUrl":5,"origin":6,"metadata":362},"The Perfect Pillow V.2",{"hasPlayer":8,"artist":3,"artistId":9,"title":361,"songId":363,"tracks":364,"hasChords":37,"defaultTrack":38},386585,[365,368],{"difficulty":45,"tuning":366,"instrumentId":143,"views":367},[15,16,17,18,19,20],0.2234244132812904,{"difficulty":45,"tuning":369,"instrumentId":143,"views":370},[15,16,17,18,19,20],0.1675962197794111,{"artistName":3,"songTitle":372,"originUrl":5,"origin":6,"metadata":373},"Temporarily Destabilized - More To Come",{"hasPlayer":8,"artist":3,"artistId":9,"title":372,"songId":374,"tracks":375,"hasChords":37,"defaultTrack":38},394599,[376,379,382,385],{"difficulty":45,"tuning":377,"instrumentId":143,"views":378},[15,16,17,18,19,20],0.26277102354128173,{"difficulty":45,"tuning":380,"instrumentId":143,"views":381},[15,16,17,18,19,20],4.699370200942131e-8,{"difficulty":336,"tuning":383,"instrumentId":143,"views":384},[15,16,17,18,19,20],0.0780022360626567,{"difficulty":336,"tuning":386,"instrumentId":143,"views":387},[15,16,17,18,19,20],0.016996393347664097,{"artistName":3,"songTitle":389,"originUrl":5,"origin":6,"metadata":390},"Newborn Sun (Tab Book Version)",{"hasPlayer":8,"artist":3,"artistId":9,"title":389,"songId":391,"tracks":392,"hasChords":37,"defaultTrack":38},399674,[393,396,399],{"difficulty":93,"tuning":394,"instrumentId":21,"views":395},[15,16,17,18,19,20],0.3414613310937132,{"difficulty":84,"tuning":397,"instrumentId":21,"views":398},[15,16,17,18,19,20],0.00001548422824680414,{"difficulty":27,"tuning":400,"instrumentId":21,"views":401},[15,16,17,18,19,20],2.109502943665056e-12,{"artistName":3,"songTitle":403,"originUrl":5,"origin":6,"metadata":404},"Sketch",{"hasPlayer":8,"artist":3,"artistId":9,"title":403,"songId":405,"tracks":406,"hasChords":37,"defaultTrack":135},389315,[407,410],{"difficulty":84,"tuning":408,"instrumentId":29,"views":409},[15,16,17,18,19,20],0.043434877006311705,{"difficulty":27,"tuning":411,"instrumentId":29,"views":412},[15,16,17,18,19,20],0.294,{"artistName":3,"songTitle":414,"originUrl":5,"origin":6,"metadata":415},"Continue",{"hasPlayer":8,"artist":3,"artistId":9,"title":414,"songId":416,"tracks":417,"hasChords":37,"defaultTrack":38},435167,[418],{"difficulty":93,"tuning":419,"instrumentId":123,"views":420},[15,16,17,18,19,20],0.31870683884181145,{"artistName":3,"songTitle":422,"originUrl":5,"origin":6,"metadata":423},"The Space",{"hasPlayer":8,"artist":3,"artistId":9,"title":422,"songId":424,"tracks":425,"hasChords":37,"defaultTrack":38},436416,[426,429,432],{"difficulty":93,"tuning":427,"instrumentId":21,"views":428},[15,16,17,18,19,20],0.175001034057839,{"difficulty":93,"tuning":430,"instrumentId":21,"views":431},[15,16,17,18,19,20],0.08788442537863245,{"tuning":433,"instrumentId":68,"views":434},[66,67,68,69,70],0.00008210645974558061,{"artistName":3,"songTitle":436,"originUrl":5,"origin":6,"metadata":437},"Mario Camarena Instagram Riff",{"hasPlayer":8,"artist":3,"artistId":9,"title":436,"songId":438,"tracks":439,"hasChords":37,"defaultTrack":38},401369,[440],{"difficulty":13,"tuning":441,"instrumentId":123,"views":442},[15,16,17,18,19,20],0.22643156111736698,{"artistName":3,"songTitle":444,"originUrl":5,"origin":6,"metadata":445},"Dew 2",{"hasPlayer":8,"artist":3,"artistId":9,"title":444,"songId":446,"tracks":447,"hasChords":37,"defaultTrack":135},424550,[448,451,454],{"difficulty":45,"tuning":449,"instrumentId":29,"views":450},[15,16,17,18,19,20],0.004733280753689092,{"difficulty":80,"tuning":452,"instrumentId":29,"views":453},[15,16,17,18,19,20],0.21000231929813026,{"tuning":455,"instrumentId":456,"views":38},[15,16,17,18,19,20],89,{"artistName":3,"songTitle":458,"originUrl":5,"origin":6,"metadata":459},"Breathe",{"hasPlayer":8,"artist":3,"artistId":9,"title":458,"songId":460,"tracks":461,"hasChords":37,"defaultTrack":38},388679,[462,465],{"difficulty":80,"tuning":463,"instrumentId":143,"views":464},[15,16,17,18,19,20],0.21292639530895113,{"difficulty":80,"tuning":466,"instrumentId":143,"views":467},[15,16,17,18,19,20],1.3012964844293886e-20,{"artistName":3,"songTitle":469,"originUrl":5,"origin":6,"metadata":470},"Awkward By Tyler The Creator Cover By Mario",{"hasPlayer":8,"artist":3,"artistId":9,"title":469,"songId":471,"tracks":472,"hasChords":37,"defaultTrack":38},394595,[473],{"difficulty":84,"tuning":474,"instrumentId":21,"views":475},[15,16,17,18,19,20],0.18862162479938321,{"artistName":477,"songTitle":478,"originUrl":5,"origin":6,"metadata":479},"Muse","Hyper Chondriac Music",{"hasPlayer":8,"artist":477,"artistId":480,"title":478,"songId":481,"tracks":482,"hasChords":8,"defaultTrack":115},184,13410,[483,487,490,493,497,501,504],{"difficulty":484,"tuning":485,"instrumentId":123,"views":486},"VERY_EASY",[15,16,17,18,19,20],0.07309810091900404,{"difficulty":13,"tuning":488,"instrumentId":143,"views":489},[15,16,17,18,19,67],1.4766520605655393e-12,{"difficulty":27,"tuning":491,"instrumentId":29,"views":492},[15,16,17,18,19,20],0.09906328863430411,{"tuning":494,"instrumentId":495,"views":496},[66,67,68,130],87,9.095962542706478e-125,{"tuning":498,"instrumentId":499,"views":500},[15,16,17,18,19,20],66,8.825693003573002e-23,{"tuning":502,"instrumentId":135,"views":503},[15,16,17,18,19,67],0.00034196685556177125,{"instrumentId":63,"views":505},3.820083456878235e-7,{"artistName":3,"songTitle":507,"originUrl":5,"origin":6,"metadata":508},"Breathe (Both Parts)",{"hasPlayer":8,"artist":3,"artistId":9,"title":507,"songId":509,"tracks":510,"hasChords":37,"defaultTrack":38},390566,[511,514],{"difficulty":45,"tuning":512,"instrumentId":143,"views":513},[15,16,17,18,19,20],0.11228709572728796,{"difficulty":45,"tuning":515,"instrumentId":143,"views":516},[15,16,17,18,19,20],0.036896205833337116,{"artistName":3,"songTitle":518,"originUrl":5,"origin":6,"metadata":519},"Shashank Exercise Slow",{"hasPlayer":8,"artist":3,"artistId":9,"title":518,"songId":520,"tracks":521,"hasChords":37,"defaultTrack":38},496346,[522],{"difficulty":13,"tuning":523,"instrumentId":268,"views":524},[15,16,17,18,19,20],0.1029,{"artistName":3,"songTitle":526,"originUrl":5,"origin":6,"metadata":527},"Fall 2",{"hasPlayer":8,"artist":3,"artistId":9,"title":526,"songId":528,"tracks":529,"hasChords":37,"defaultTrack":38},424552,[530,533],{"difficulty":84,"tuning":531,"instrumentId":21,"views":532},[15,16,17,18,19,20],0.07764237280792775,{"difficulty":45,"tuning":534,"instrumentId":21,"views":535},[15,16,17,18,19,20],0.002906678019963942,{"artistName":3,"songTitle":537,"originUrl":5,"origin":6,"metadata":538},"Some Jolly Riffage - Mario Camarena",{"hasPlayer":8,"artist":3,"artistId":9,"title":537,"songId":539,"tracks":540,"hasChords":37,"defaultTrack":38},397031,[541],{"difficulty":27,"tuning":542,"instrumentId":130,"views":543},[15,16,17,18,19,20],8.871090790005523e-12,{"artistName":3,"songTitle":545,"originUrl":5,"origin":6,"metadata":546},"Here And There",{"hasPlayer":8,"artist":3,"artistId":9,"title":545,"songId":547,"tracks":548,"hasChords":37,"defaultTrack":135},447724,[549,552,555,558],{"difficulty":84,"tuning":550,"instrumentId":21,"views":551},[15,16,17,18,19,20],0.0004395978335367256,{"difficulty":45,"tuning":553,"instrumentId":21,"views":554},[15,16,17,18,19,20],0.03880075404719889,{"tuning":556,"instrumentId":68,"views":557},[66,67,68,69],1.0440755899358641e-12,{"instrumentId":63,"views":559},0.004152386160299997,{"artistName":3,"songTitle":561,"originUrl":5,"origin":6,"metadata":562},"Hot Chocolate Riff",{"hasPlayer":8,"artist":3,"artistId":9,"title":561,"songId":563,"tracks":564,"hasChords":37,"defaultTrack":38},445651,[565],{"difficulty":27,"tuning":566,"instrumentId":123,"views":567},[15,16,17,18,19,20],0.025201576221239263,{"artistName":3,"songTitle":569,"originUrl":5,"origin":6,"metadata":570},"Beatbox Riff",{"hasPlayer":8,"artist":3,"artistId":9,"title":569,"songId":571,"tracks":572,"hasChords":37,"defaultTrack":38},397437,[573,576],{"difficulty":13,"tuning":574,"instrumentId":123,"views":575},[15,16,17,18,19,20],0.009898525923706474,{"instrumentId":63,"views":577},2.493042166696012e-103,{"artistName":3,"songTitle":579,"originUrl":5,"origin":6,"metadata":580},"Fall (Ending)",{"hasPlayer":8,"artist":3,"artistId":9,"title":579,"songId":581,"tracks":582,"hasChords":37,"defaultTrack":38},399654,[583],{"difficulty":93,"tuning":584,"instrumentId":21,"views":585},[15,16,17,18,19,20],0.003848089780423873,{"artistName":3,"songTitle":587,"originUrl":5,"origin":6,"metadata":588},"Obsjsbcgcy (Soundcloud Riff)",{"hasPlayer":8,"artist":3,"artistId":9,"title":587,"songId":589,"tracks":590,"hasChords":37,"defaultTrack":38},393098,[591],{"difficulty":84,"tuning":592,"instrumentId":123,"views":593},[15,16,17,18,19,20],0.0029066703659620997,{"artistName":3,"songTitle":595,"originUrl":5,"origin":6,"metadata":596},"Bday Riffage",{"hasPlayer":8,"artist":3,"artistId":9,"title":595,"songId":597,"tracks":598,"hasChords":37,"defaultTrack":38},379580,[599],{"difficulty":84,"tuning":600,"instrumentId":21,"views":601},[15,16,17,18,19,20],0.0020683604402747446,{"artistName":3,"songTitle":603,"originUrl":5,"origin":6,"metadata":604},"New Song From Livestream 2018",{"hasPlayer":8,"artist":3,"artistId":9,"title":603,"songId":605,"tracks":606,"hasChords":37,"defaultTrack":135},447982,[607,610],{"difficulty":84,"tuning":608,"instrumentId":21,"views":609},[15,16,17,18,19,20],2.3403362373662955e-28,{"difficulty":27,"tuning":611,"instrumentId":21,"views":612},[15,16,17,18,19,20],0.001443767451133465,{"artistName":3,"songTitle":614,"originUrl":5,"origin":6,"metadata":615},"Live Intro Tab (Very Old)",{"hasPlayer":8,"artist":3,"artistId":9,"title":614,"songId":616,"tracks":617,"hasChords":37,"defaultTrack":38},388997,[618,621],{"difficulty":80,"tuning":619,"instrumentId":143,"views":620},[15,16,17,18,19,20],0.0014242684529828988,{"difficulty":13,"tuning":622,"instrumentId":143,"views":38},[15,16,17,18,19,20],{"artistName":3,"songTitle":624,"originUrl":5,"origin":6,"metadata":625},"Super Potion",{"hasPlayer":8,"artist":3,"artistId":9,"title":624,"songId":626,"tracks":627,"hasChords":37,"defaultTrack":38},436921,[628],{"difficulty":27,"tuning":629,"instrumentId":123,"views":630},[15,16,17,18,19,20],0.0008897533265945236,{"artistName":3,"songTitle":632,"originUrl":5,"origin":6,"metadata":633},"The Perfect Pillow (Alternate Solo)",{"hasPlayer":8,"artist":3,"artistId":9,"title":632,"songId":634,"tracks":635,"hasChords":37,"defaultTrack":135},390567,[636,639],{"difficulty":27,"tuning":637,"instrumentId":143,"views":638},[15,16,17,18,19,20],6.701024108180119e-63,{"difficulty":336,"tuning":640,"instrumentId":143,"views":641},[15,16,17,18,19,20],0.000013799596096342174,{"artistName":643,"songTitle":644,"originUrl":645,"origin":646,"metadata":647},"CHON","Cant Wait","https://tabs.ultimate-guitar.com/tab/chon/cant-wait-official-3382469","ultimate-guitar",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":644,"marketing_type":650,"tab_id":651,"tab_url":645,"device":652,"app_link":653,"highlight":654},32948,"/artist/chon_32948","official",1729248,null,"//www.ultimate-guitar.com/send?ug_from=yozio_splash&url=https://play.google.com/store/apps/details?id=com.ultimateguitar.tabs&ug_campaign=UG_TPAndroid_SearchTpLink_SearchPage_mobile0&referrer=utm_campaign=UG_TPAndroid_SearchTpLink_SearchPage_mobile0",{"song_name":655,"artist_name":656},[],[657],[38,658],4,{"artistName":643,"songTitle":644,"originUrl":660,"origin":646,"metadata":661},"https://tabs.ultimate-guitar.com/tab/chon/cant-wait-guitar-pro-1757620",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":644,"marketing_type":662,"rating":663,"votes":18,"tab_id":651,"tab_url":660,"device":652,"app_link":653,"highlight":664,"tracks":668,"duration":669},"TabPro",4.85668,{"song_name":665,"artist_name":666},[],[667],[38,658],"Electric Guitar (clean), Acoustic Guitar (steel), Overdriven Guitar, Electric Bass (finger), Acoustic Grand Piano, Pad 2 (warm), Drums","2:52",{"artistName":643,"songTitle":644,"originUrl":671,"origin":646,"metadata":672},"https://tabs.ultimate-guitar.com/tab/chon/cant-wait-guitar-pro-1729248",{"id":651,"song_id":673,"song_name":644,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":135,"votes":676,"difficulty":677,"rating":678,"date":679,"status":680,"preset_id":681,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":683,"artist_url":685,"tab_url":671},1595748,"Pro","intro",10,"",4.72338,"1428956914","approved",2995,"public",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":684},[],"https://www.ultimate-guitar.com/artist/chon_32948",{"artistName":643,"songTitle":644,"originUrl":687,"origin":646,"metadata":688},"https://tabs.ultimate-guitar.com/tab/chon/cant-wait-guitar-pro-1729587",{"id":689,"song_id":673,"song_name":644,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":115,"votes":658,"difficulty":690,"rating":691,"date":692,"status":680,"preset_id":681,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":652,"verified":38,"recording":693,"artist_url":685,"tab_url":687},1729587,"advanced",4.48629,"1429078734",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":694},[],{"artistName":643,"songTitle":644,"originUrl":660,"origin":646,"metadata":696},{"id":697,"song_id":673,"song_name":644,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":18,"difficulty":698,"rating":663,"date":699,"status":680,"preset_id":681,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":700,"artist_url":685,"tab_url":660},1757620,"intermediate","1438884676",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":701},[],{"artistName":643,"songTitle":703,"originUrl":704,"origin":646,"metadata":705},"Dead End","https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=dead%20end&tab_id=2965505",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":703,"marketing_type":662,"rating":706,"votes":707,"tab_id":708,"tab_url":704,"device":652,"app_link":653,"highlight":709},4.64041,7,2965505,{"song_name":710,"artist_name":711},[],[712],[38,658],{"artistName":643,"songTitle":703,"originUrl":714,"origin":646,"metadata":715},"https://tabs.ultimate-guitar.com/tab/chon/dead-end-guitar-pro-2965505",{"id":708,"song_id":716,"song_name":703,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":707,"difficulty":677,"rating":706,"date":717,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":718,"verified":38,"recording":719,"artist_url":685,"tab_url":714},3777323,"1579639220","This version is based on video of CHON playing the song.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":720},[],{"artistName":643,"songTitle":180,"originUrl":722,"origin":646,"metadata":723},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=dust&tab_id=1486621",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":180,"marketing_type":662,"rating":724,"votes":725,"tab_id":726,"tab_url":722,"device":652,"app_link":653,"highlight":727,"tracks":731,"duration":732},4.86564,61,1486621,{"song_name":728,"artist_name":729},[],[730],[38,658],"Acoustic Guitar (steel)","1:50",{"artistName":643,"songTitle":180,"originUrl":734,"origin":646,"metadata":735},"https://tabs.ultimate-guitar.com/tab/chon/dust-guitar-pro-1486621",{"id":726,"song_id":736,"song_name":180,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":725,"difficulty":698,"rating":724,"date":737,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":738,"artist_url":685,"tab_url":734},1445720,"1400835476",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":739},[],{"artistName":643,"songTitle":180,"originUrl":741,"origin":646,"metadata":742},"https://tabs.ultimate-guitar.com/tab/chon/dust-guitar-pro-2290901",{"id":743,"song_id":736,"song_name":180,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":658,"difficulty":698,"rating":744,"date":745,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":746,"version_description":747,"verified":38,"recording":748,"artist_url":685,"tab_url":741},2290901,4.62914,"1516452158","Am","Chon - Dust Guitar Pro 5 Tab.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":749},[],{"artistName":643,"songTitle":751,"originUrl":752,"origin":646,"metadata":753},"Ghost","https://tabs.ultimate-guitar.com/tab/chon/ghost-guitar-pro-2672772",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":751,"marketing_type":662,"rating":754,"votes":755,"tab_id":756,"tab_url":752,"device":652,"app_link":653,"highlight":757},4.734,3,4386590,{"song_name":758,"artist_name":759},[],[760],[38,658],{"artistName":643,"songTitle":751,"originUrl":762,"origin":646,"metadata":763},"https://tabs.ultimate-guitar.com/tab/chon/ghost-guitar-pro-4386590",{"id":756,"song_id":764,"song_name":751,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":135,"votes":38,"difficulty":690,"rating":38,"date":765,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":766,"version_description":767,"verified":38,"recording":768,"artist_url":685,"tab_url":762},3276474,"1665910571","C#","A Guitar Pro version of the tabs by Ryan Kenny: https://www.youtube.com/user/chicken6111.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":769},[],{"artistName":643,"songTitle":751,"originUrl":752,"origin":646,"metadata":771},{"id":772,"song_id":764,"song_name":751,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":755,"difficulty":690,"rating":754,"date":773,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":774,"version_description":775,"verified":38,"recording":776,"artist_url":685,"tab_url":752},2672772,"1556010802","E","First full version of the song out there. Originally posted on CHON Homey\'s FB page.",{"is_acoustic":38,"tonality_name":677,"performance":777,"recording_artists":792},{"name":778,"serie":779,"venue":782,"date_start":788,"date_end":788,"cancelled":38,"type":789,"comment":790,"video_urls":791},"Live at Wonder Ballroom, Portland, OR, 06/22/2018",{"name":780,"type":781},"Super Chon Bros Tour 2","tour",{"name":783,"area":784},"Wonder Ballroom",{"name":785,"country":786},"Portland, Oregon",{"name_english":787},"United States",1529625600,"concert","First tour the song was played live?",[],[],{"artistName":643,"songTitle":794,"originUrl":795,"origin":646,"metadata":796},"Knot","https://tabs.ultimate-guitar.com/tab/chon/knot-guitar-pro-1460992",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":794,"marketing_type":662,"rating":797,"votes":798,"tab_id":799,"tab_url":795,"device":652,"app_link":653,"highlight":800,"tracks":804,"duration":805},4.74467,15,1460872,{"song_name":801,"artist_name":802},[],[803],[38,658],"Electric Guitar (clean) (x2)","2:14",{"artistName":643,"songTitle":794,"originUrl":807,"origin":646,"metadata":808},"https://tabs.ultimate-guitar.com/tab/chon/knot-guitar-pro-1460872",{"id":799,"song_id":809,"song_name":794,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":38,"difficulty":698,"rating":38,"date":810,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":811,"artist_url":685,"tab_url":807},1433289,"1391472001",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":812},[],{"artistName":643,"songTitle":794,"originUrl":795,"origin":646,"metadata":814},{"id":815,"song_id":809,"song_name":794,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":798,"difficulty":690,"rating":797,"date":816,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":652,"verified":38,"recording":817,"artist_url":685,"tab_url":795},1460992,"1391731201",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":818},[],{"artistName":643,"songTitle":794,"originUrl":820,"origin":646,"metadata":821},"https://tabs.ultimate-guitar.com/tab/chon/knot-guitar-pro-1498133",{"id":822,"song_id":809,"song_name":794,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":755,"votes":823,"difficulty":677,"rating":824,"date":825,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":755,"tonality_name":677,"version_description":652,"verified":38,"recording":826,"artist_url":685,"tab_url":820},1498133,5,4.4255,"1404205382",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":827},[],{"artistName":643,"songTitle":829,"originUrl":830,"origin":646,"metadata":831},"Never Heard Nostalgia","https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=never%20heard%20nostalgia&tab_id=4593008",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":829,"marketing_type":662,"rating":38,"votes":38,"tab_id":832,"tab_url":830,"device":652,"app_link":653,"highlight":833},4593008,{"song_name":834,"artist_name":835},[],[836],[38,658],{"artistName":643,"songTitle":829,"originUrl":838,"origin":646,"metadata":839},"https://tabs.ultimate-guitar.com/tab/chon/never-heard-nostalgia-guitar-pro-4593008",{"id":832,"song_id":840,"song_name":829,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":38,"difficulty":677,"rating":38,"date":841,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":842,"verified":38,"recording":843,"artist_url":685,"tab_url":838},14626391,"1673093321","Erick\'s awesome riff video https://www.youtube.com/watch?v=W0q29G1LRCg.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":844},[],{"artistName":643,"songTitle":846,"originUrl":847,"origin":646,"metadata":848},"Rosewood","https://tabs.ultimate-guitar.com/tab/chon/rosewood-guitar-pro-2731227",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":846,"marketing_type":662,"rating":849,"votes":850,"tab_id":851,"tab_url":847,"device":652,"app_link":653,"highlight":852},4.867,9,2731227,{"song_name":853,"artist_name":854},[],[855],[38,658],{"artistName":643,"songTitle":846,"originUrl":847,"origin":646,"metadata":857},{"id":851,"song_id":858,"song_name":846,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":850,"difficulty":677,"rating":849,"date":859,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":860,"verified":38,"recording":861,"artist_url":685,"tab_url":847},3495408,"1560775621","Updated based on Chon\'s live performance at Paste Studio.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":862},[],{"artistName":643,"songTitle":846,"originUrl":864,"origin":646,"metadata":865},"https://tabs.ultimate-guitar.com/tab/chon/rosewood-guitar-pro-3682274",{"id":866,"song_id":858,"song_name":846,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":38,"difficulty":677,"rating":38,"date":867,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":868,"verified":38,"recording":869,"artist_url":685,"tab_url":864},3682274,"1619607232","Taken From the Simon Macias II youtube cover.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":870},[],{"artistName":643,"songTitle":872,"originUrl":873,"origin":646,"metadata":874},"Bubble Dream","https://tabs.ultimate-guitar.com/tab/chon/bubble-dream-official-2525592",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":872,"marketing_type":650,"tab_id":875,"tab_url":873,"device":652,"app_link":653,"highlight":876},1408266,{"song_name":877,"artist_name":878},[],[879],[38,658],{"artistName":643,"songTitle":872,"originUrl":881,"origin":646,"metadata":882},"https://tabs.ultimate-guitar.com/tab/chon/bubble-dream-guitar-pro-1472321",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":872,"marketing_type":662,"rating":883,"votes":884,"tab_id":875,"tab_url":881,"device":652,"app_link":653,"highlight":885,"tracks":889,"duration":669},4.886,11,{"song_name":886,"artist_name":887},[],[888],[38,658],"Overdriven Guitar (x2), Electric Bass (finger), Drums",{"artistName":643,"songTitle":872,"originUrl":891,"origin":646,"metadata":892},"https://tabs.ultimate-guitar.com/tab/chon/bubble-dream-guitar-pro-1408266",{"id":875,"song_id":893,"song_name":872,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":894,"difficulty":698,"rating":895,"date":896,"status":680,"preset_id":897,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":898,"artist_url":685,"tab_url":891},354079,62,4.80623,"1375401601",221,{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":899},[],{"artistName":643,"songTitle":872,"originUrl":881,"origin":646,"metadata":901},{"id":902,"song_id":893,"song_name":872,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":884,"difficulty":698,"rating":883,"date":903,"status":680,"preset_id":897,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":652,"verified":38,"recording":904,"artist_url":685,"tab_url":881},1472321,"1396224001",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":905},[],{"artistName":643,"songTitle":872,"originUrl":907,"origin":646,"metadata":908},"https://tabs.ultimate-guitar.com/tab/chon/bubble-dream-guitar-pro-1911215",{"id":909,"song_id":893,"song_name":872,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":755,"votes":755,"difficulty":690,"rating":754,"date":910,"status":680,"preset_id":897,"tab_access_type":682,"tp_version":755,"tonality_name":677,"version_description":911,"verified":38,"recording":912,"artist_url":685,"tab_url":907},1911215,"1482244229","I believe is really really good tab, you got the 2 guitar, maybe later I upgrade the tab with Drums and Bass. This tab have a correct messure writting it is not all in 4 by 4.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":913},[],{"artistName":643,"songTitle":872,"originUrl":915,"origin":646,"metadata":916},"https://tabs.ultimate-guitar.com/tab/chon/bubble-dream-guitar-pro-2116197",{"id":917,"song_id":893,"song_name":872,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":658,"votes":38,"difficulty":677,"rating":38,"date":918,"status":680,"preset_id":897,"tab_access_type":682,"tp_version":658,"tonality_name":677,"version_description":677,"verified":38,"recording":919,"artist_url":685,"tab_url":915},2116197,"1503385203",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":920},[],{"artistName":643,"songTitle":872,"originUrl":922,"origin":646,"metadata":923},"https://tabs.ultimate-guitar.com/tab/chon/bubble-dream-guitar-pro-4450076",{"id":924,"song_id":893,"song_name":872,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":823,"votes":38,"difficulty":690,"rating":38,"date":925,"status":680,"preset_id":897,"tab_access_type":682,"tp_version":823,"tonality_name":926,"version_description":677,"verified":38,"recording":927,"artist_url":685,"tab_url":922},4450076,"1670327308","G",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":928},[],{"artistName":643,"songTitle":930,"originUrl":931,"origin":646,"metadata":932},"Drift","https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=drift&tab_id=4084597",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":930,"marketing_type":662,"rating":38,"votes":38,"tab_id":933,"tab_url":931,"device":652,"app_link":653,"highlight":934},4084597,{"song_name":935,"artist_name":936},[],[937],[38,658],{"artistName":643,"songTitle":930,"originUrl":939,"origin":646,"metadata":940},"https://tabs.ultimate-guitar.com/tab/chon/drift-guitar-pro-4084597",{"id":933,"song_id":941,"song_name":930,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":38,"difficulty":677,"rating":38,"date":942,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":943,"artist_url":685,"tab_url":939},11353192,"1645651035",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":944},[],{"artistName":643,"songTitle":328,"originUrl":946,"origin":646,"metadata":947},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=ecco&tab_id=1497615",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":328,"marketing_type":662,"rating":948,"votes":884,"tab_id":949,"tab_url":946,"device":652,"app_link":653,"highlight":950,"tracks":954,"duration":955},4.52889,1497615,{"song_name":951,"artist_name":952},[],[953],[38,658],"Electric Guitar (jazz)","0:21",{"artistName":643,"songTitle":328,"originUrl":957,"origin":646,"metadata":958},"https://tabs.ultimate-guitar.com/tab/chon/ecco-guitar-pro-1497615",{"id":949,"song_id":959,"song_name":328,"artist_id":648,"artist_name":643,"type":674,"part":960,"version":135,"votes":884,"difficulty":698,"rating":948,"date":961,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":962,"artist_url":685,"tab_url":957},1451092,"solo","1404201030",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":963},[],{"artistName":643,"songTitle":100,"originUrl":965,"origin":646,"metadata":966},"https://tabs.ultimate-guitar.com/tab/chon/perfect-pillow-guitar-pro-3564743",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":100,"marketing_type":662,"rating":38,"votes":38,"tab_id":967,"tab_url":965,"device":652,"app_link":653,"highlight":968},3564743,{"song_name":969,"artist_name":970},[],[971],[38,658],{"artistName":643,"songTitle":100,"originUrl":965,"origin":646,"metadata":973},{"id":967,"song_id":974,"song_name":100,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":38,"difficulty":690,"rating":38,"date":975,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":976,"verified":38,"recording":977,"artist_url":685,"tab_url":965},2932320,"1613554791","The only GP files I\'ve seen on here have just been guitar, so I found sheet music for the bass and drum parts and added them to get the full song. Probably not 100% correct but it\'ll get you close.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":978},[],{"artistName":643,"songTitle":100,"originUrl":980,"origin":646,"metadata":981},"https://tabs.ultimate-guitar.com/tab/chon/perfect-pillow-guitar-pro-4450124",{"id":982,"song_id":974,"song_name":100,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":38,"difficulty":690,"rating":38,"date":983,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":926,"version_description":677,"verified":38,"recording":984,"artist_url":685,"tab_url":980},4450124,"1670327404",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":985},[],{"artistName":643,"songTitle":987,"originUrl":988,"origin":646,"metadata":989},"Potion","https://tabs.ultimate-guitar.com/tab/chon/potion-guitar-pro-1396263",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":987,"marketing_type":662,"rating":990,"votes":991,"tab_id":992,"tab_url":988,"device":652,"app_link":653,"highlight":993,"tracks":954,"duration":997},4.8936,12,1396263,{"song_name":994,"artist_name":995},[],[996],[38,658],"0:36",{"artistName":643,"songTitle":987,"originUrl":988,"origin":646,"metadata":999},{"id":992,"song_id":1000,"song_name":987,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":991,"difficulty":698,"rating":990,"date":1001,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1002,"artist_url":685,"tab_url":988},348882,"1371600001",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1003},[],{"artistName":643,"songTitle":987,"originUrl":1005,"origin":646,"metadata":1006},"https://tabs.ultimate-guitar.com/tab/chon/potion-guitar-pro-1418253",{"id":1007,"song_id":1000,"song_name":987,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":38,"difficulty":698,"rating":38,"date":1008,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":652,"verified":38,"recording":1009,"artist_url":685,"tab_url":1005},1418253,"1378944001",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1010},[],{"artistName":643,"songTitle":987,"originUrl":1012,"origin":646,"metadata":1013},"https://tabs.ultimate-guitar.com/tab/chon/potion-guitar-pro-1418191",{"id":1014,"song_id":1000,"song_name":987,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":755,"votes":38,"difficulty":698,"rating":38,"date":1008,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":755,"tonality_name":677,"version_description":652,"verified":38,"recording":1015,"artist_url":685,"tab_url":1012},1418191,{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1016},[],{"artistName":643,"songTitle":987,"originUrl":1018,"origin":646,"metadata":1019},"https://tabs.ultimate-guitar.com/tab/chon/potion-guitar-pro-1472329",{"id":1020,"song_id":1000,"song_name":987,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":658,"votes":38,"difficulty":1021,"rating":38,"date":1022,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":658,"tonality_name":677,"version_description":652,"verified":38,"recording":1023,"artist_url":685,"tab_url":1018},1472329,"novice","1396310401",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1024},[],{"artistName":643,"songTitle":987,"originUrl":1026,"origin":646,"metadata":1027},"https://tabs.ultimate-guitar.com/tab/chon/potion-guitar-pro-2217393",{"id":1028,"song_id":1000,"song_name":987,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":823,"votes":38,"difficulty":690,"rating":38,"date":1029,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":823,"tonality_name":677,"version_description":677,"verified":38,"recording":1030,"artist_url":685,"tab_url":1026},2217393,"1509007609",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1031},[],{"artistName":643,"songTitle":304,"originUrl":1033,"origin":646,"metadata":1034},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=sleepy%20tea&tab_id=1987757",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":304,"marketing_type":662,"rating":1035,"votes":1036,"tab_id":1037,"tab_url":1033,"device":652,"app_link":653,"highlight":1038,"tracks":804,"duration":1042},4.83513,37,1987757,{"song_name":1039,"artist_name":1040},[],[1041],[38,658],"2:21",{"artistName":643,"songTitle":304,"originUrl":1044,"origin":646,"metadata":1045},"https://tabs.ultimate-guitar.com/tab/chon/sleepy-tea-guitar-pro-1987757",{"id":1037,"song_id":1046,"song_name":304,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":1036,"difficulty":690,"rating":1035,"date":1047,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":1048,"artist_url":685,"tab_url":1044},1729883,"1493378932",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1049},[],{"artistName":643,"songTitle":304,"originUrl":1051,"origin":646,"metadata":1052},"https://tabs.ultimate-guitar.com/tab/chon/sleepy-tea-guitar-pro-1988547",{"id":1053,"song_id":1046,"song_name":304,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":38,"difficulty":690,"rating":38,"date":1054,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":677,"verified":38,"recording":1055,"artist_url":685,"tab_url":1051},1988547,"1493513556",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1056},[],{"artistName":643,"songTitle":304,"originUrl":1058,"origin":646,"metadata":1059},"https://tabs.ultimate-guitar.com/tab/chon/sleepy-tea-guitar-pro-1990963",{"id":1060,"song_id":1046,"song_name":304,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":755,"votes":755,"difficulty":690,"rating":1061,"date":1062,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":755,"tonality_name":677,"version_description":677,"verified":38,"recording":1063,"artist_url":685,"tab_url":1058},1990963,4.40065,"1493888625",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1064},[],{"artistName":643,"songTitle":1066,"originUrl":1067,"origin":646,"metadata":1068},"The Perfect Pillow","https://tabs.ultimate-guitar.com/tab/chon/the-perfect-pillow-guitar-pro-1395991",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":1066,"marketing_type":662,"rating":1069,"votes":130,"tab_id":1070,"tab_url":1067,"device":652,"app_link":653,"highlight":1071,"tracks":1075,"duration":1076},4.60015,1206246,{"song_name":1072,"artist_name":1073},[],[1074],[38,658],"Distortion Guitar (x2)","3:29",{"artistName":643,"songTitle":1066,"originUrl":1078,"origin":646,"metadata":1079},"https://tabs.ultimate-guitar.com/tab/chon/the-perfect-pillow-guitar-pro-1206246",{"id":1070,"song_id":1080,"song_name":1066,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":135,"votes":38,"difficulty":698,"rating":38,"date":1081,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1082,"artist_url":685,"tab_url":1078},328029,"1357603201",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1083},[],{"artistName":643,"songTitle":1066,"originUrl":1067,"origin":646,"metadata":1085},{"id":1086,"song_id":1080,"song_name":1066,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":130,"difficulty":698,"rating":1069,"date":1001,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1087,"artist_url":685,"tab_url":1067},1395991,{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1088},[],{"artistName":643,"songTitle":1066,"originUrl":1090,"origin":646,"metadata":1091},"https://tabs.ultimate-guitar.com/tab/chon/the-perfect-pillow-guitar-pro-1916097",{"id":1092,"song_id":1080,"song_name":1066,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":658,"difficulty":690,"rating":691,"date":1093,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":677,"verified":38,"recording":1094,"artist_url":685,"tab_url":1090},1916097,"1482317455",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1095},[],{"artistName":643,"songTitle":1066,"originUrl":1097,"origin":646,"metadata":1098},"https://tabs.ultimate-guitar.com/tab/chon/the-perfect-pillow-guitar-pro-2539224",{"id":1099,"song_id":1080,"song_name":1066,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":755,"votes":38,"difficulty":690,"rating":38,"date":1100,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":755,"tonality_name":1101,"version_description":677,"verified":38,"recording":1102,"artist_url":685,"tab_url":1097},2539224,"1544530315","C",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1103},[],{"artistName":643,"songTitle":1066,"originUrl":1105,"origin":646,"metadata":1106},"https://tabs.ultimate-guitar.com/tab/chon/the-perfect-pillow-guitar-pro-4231363",{"id":1107,"song_id":1080,"song_name":1066,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":658,"votes":38,"difficulty":677,"rating":38,"date":1108,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":658,"tonality_name":677,"version_description":677,"verified":38,"recording":1109,"artist_url":685,"tab_url":1105},4231363,"1655132379",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1110},[],{"artistName":643,"songTitle":52,"originUrl":1112,"origin":646,"metadata":1113},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&app_utm_content=Official+Version&artist=CHON&song=waterslide&tab_id=3363767",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":52,"marketing_type":650,"tab_id":1114,"tab_url":1112,"device":652,"app_link":653,"highlight":1115},2018201,{"song_name":1116,"artist_name":1117},[],[1118],[38,658],{"artistName":643,"songTitle":52,"originUrl":1120,"origin":646,"metadata":1121},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=waterslide&tab_id=2540298",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":52,"marketing_type":662,"rating":1122,"votes":69,"tab_id":1114,"tab_url":1120,"device":652,"app_link":653,"highlight":1123},4.75495,{"song_name":1124,"artist_name":1125},[],[1126],[38,658],{"artistName":643,"songTitle":52,"originUrl":1128,"origin":646,"metadata":1129},"https://tabs.ultimate-guitar.com/tab/chon/waterslide-guitar-pro-2018201",{"id":1114,"song_id":1130,"song_name":52,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":135,"votes":850,"difficulty":698,"rating":1131,"date":1132,"status":680,"preset_id":1133,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":1134,"artist_url":685,"tab_url":1128},1741883,4.20033,"1496390587",44816,{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1135},[],{"artistName":643,"songTitle":52,"originUrl":1137,"origin":646,"metadata":1138},"https://tabs.ultimate-guitar.com/tab/chon/waterslide-guitar-pro-2153553",{"id":1139,"song_id":1130,"song_name":52,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":115,"votes":798,"difficulty":690,"rating":1140,"date":1141,"status":680,"preset_id":1133,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":1142,"verified":38,"recording":1143,"artist_url":685,"tab_url":1137},2153553,4.578,"1505741996","Fixed the timing and added the harmonizing second guitar on the second repetition. Only the second section is included.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1144},[],{"artistName":643,"songTitle":52,"originUrl":1146,"origin":646,"metadata":1147},"https://tabs.ultimate-guitar.com/tab/chon/waterslide-guitar-pro-2204121",{"id":1148,"song_id":1130,"song_name":52,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":707,"difficulty":677,"rating":1149,"date":1150,"status":680,"preset_id":1133,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":1151,"artist_url":685,"tab_url":1146},2204121,3.54043,"1508160342",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1152},[],{"artistName":643,"songTitle":52,"originUrl":1154,"origin":646,"metadata":1155},"https://tabs.ultimate-guitar.com/tab/chon/waterslide-guitar-pro-2540298",{"id":1156,"song_id":1130,"song_name":52,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":69,"difficulty":698,"rating":1122,"date":1157,"status":680,"preset_id":1133,"tab_access_type":682,"tp_version":115,"tonality_name":1158,"version_description":1159,"verified":38,"recording":1160,"artist_url":685,"tab_url":1154},2540298,"1544702128","A","This version uses live footage and is very close to how they actually play it.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1161},[],{"artistName":643,"songTitle":1163,"originUrl":1164,"origin":646,"metadata":1165},"7Th Chord Sweep","https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=7th%20chord%20sweep&tab_id=2851916",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":1163,"marketing_type":662,"rating":1166,"votes":1167,"tab_id":1168,"tab_url":1164,"device":652,"app_link":653,"highlight":1169},4.82267,6,2851916,{"song_name":1170,"artist_name":1171},[],[1172],[38,658],{"artistName":643,"songTitle":1163,"originUrl":1174,"origin":646,"metadata":1175},"https://tabs.ultimate-guitar.com/tab/chon/7th-chord-sweep-guitar-pro-2851916",{"id":1168,"song_id":1176,"song_name":1163,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":1167,"difficulty":690,"rating":1166,"date":1177,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":1178,"version_description":1179,"verified":38,"recording":1180,"artist_url":685,"tab_url":1174},3695810,"1570795943","Em","(https://www.youtube.com/watch?v=LaOdwqSjzrk) This is the 7th chord sweep found on the channel \\"Happy chon channel\\". A section of this can also be found on Mario\'s tutorial on 7th chord sweeps.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1181},[],{"artistName":643,"songTitle":339,"originUrl":1183,"origin":646,"metadata":1184},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=across%20the%20spectrum&tab_id=1785642",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":339,"marketing_type":662,"rating":38,"votes":38,"tab_id":1185,"tab_url":1183,"device":652,"app_link":653,"highlight":1186,"tracks":1075,"duration":1190},1785642,{"song_name":1187,"artist_name":1188},[],[1189],[38,658],"0:34",{"artistName":643,"songTitle":339,"originUrl":1192,"origin":646,"metadata":1193},"https://tabs.ultimate-guitar.com/tab/chon/across-the-spectrum-guitar-pro-1785642",{"id":1185,"song_id":1194,"song_name":339,"artist_id":648,"artist_name":643,"type":674,"part":675,"version":135,"votes":38,"difficulty":677,"rating":38,"date":1195,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1196,"artist_url":685,"tab_url":1192},1632184,"1448958733",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1197},[],{"artistName":643,"songTitle":1199,"originUrl":1200,"origin":646,"metadata":1201},"Away Team","https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=away%20team&tab_id=2293087",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":1199,"marketing_type":662,"rating":38,"votes":38,"tab_id":1202,"tab_url":1200,"device":652,"app_link":653,"highlight":1203},2293087,{"song_name":1204,"artist_name":1205},[],[1206],[38,658],{"artistName":643,"songTitle":1199,"originUrl":1208,"origin":646,"metadata":1209},"https://tabs.ultimate-guitar.com/tab/chon/away-team-guitar-pro-2293087",{"id":1202,"song_id":1210,"song_name":1199,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":38,"difficulty":698,"rating":38,"date":1211,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":1212,"artist_url":685,"tab_url":1208},2674709,"1516625082",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1213},[],{"artistName":643,"songTitle":1215,"originUrl":1216,"origin":646,"metadata":1217},"Book","https://tabs.ultimate-guitar.com/tab/chon/book-guitar-pro-1724590",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":1215,"marketing_type":662,"rating":1218,"votes":1219,"tab_id":1220,"tab_url":1216,"device":652,"app_link":653,"highlight":1221,"tracks":1225,"duration":1226},4.9022,44,1724590,{"song_name":1222,"artist_name":1223},[],[1224],[38,658],"Distortion Guitar (x2), Electric Bass (finger), Drums","2:38",{"artistName":643,"songTitle":1215,"originUrl":1216,"origin":646,"metadata":1228},{"id":1220,"song_id":1229,"song_name":1215,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":1219,"difficulty":698,"rating":1218,"date":1230,"status":680,"preset_id":1231,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1232,"artist_url":685,"tab_url":1216},1596012,"1427616520",2992,{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1233},[],{"artistName":643,"songTitle":1215,"originUrl":1235,"origin":646,"metadata":1236},"https://tabs.ultimate-guitar.com/tab/chon/book-guitar-pro-1727750",{"id":1237,"song_id":1229,"song_name":1215,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":115,"votes":676,"difficulty":698,"rating":1238,"date":1239,"status":680,"preset_id":1231,"tab_access_type":682,"tp_version":115,"tonality_name":677,"version_description":652,"verified":38,"recording":1240,"artist_url":685,"tab_url":1235},1727750,4.80031,"1428389387",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1241},[],{"artistName":643,"songTitle":1215,"originUrl":1243,"origin":646,"metadata":1244},"https://tabs.ultimate-guitar.com/tab/chon/book-guitar-pro-2612349",{"id":1245,"song_id":1229,"song_name":1215,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":755,"votes":38,"difficulty":698,"rating":38,"date":1246,"status":680,"preset_id":1231,"tab_access_type":682,"tp_version":755,"tonality_name":677,"version_description":1247,"verified":38,"recording":1248,"artist_url":685,"tab_url":1243},2612349,"1550851316","This version uses live footage.",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1249},[],{"artistName":643,"songTitle":458,"originUrl":1251,"origin":646,"metadata":1252},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=breathe&tab_id=1454660",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":458,"marketing_type":662,"rating":678,"votes":676,"tab_id":1253,"tab_url":1251,"device":652,"app_link":653,"highlight":1254,"tracks":1258,"duration":1259},1182710,{"song_name":1255,"artist_name":1256},[],[1257],[38,658],"Electric Guitar (jazz) (x2)","3:16",{"artistName":643,"songTitle":458,"originUrl":1261,"origin":646,"metadata":1262},"https://tabs.ultimate-guitar.com/tab/chon/breathe-guitar-pro-1182710",{"id":1253,"song_id":1263,"song_name":458,"artist_id":648,"artist_name":643,"type":674,"part":960,"version":135,"votes":38,"difficulty":690,"rating":38,"date":1264,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1265,"artist_url":685,"tab_url":1261},317901,"1347840001",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1266},[],{"artistName":643,"songTitle":458,"originUrl":1268,"origin":646,"metadata":1269},"https://tabs.ultimate-guitar.com/tab/chon/breathe-guitar-pro-1454660",{"id":1270,"song_id":1263,"song_name":458,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":676,"difficulty":690,"rating":678,"date":1271,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":1272,"artist_url":685,"tab_url":1268},1454660,"1390348801",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1273},[],{"artistName":643,"songTitle":1275,"originUrl":1276,"origin":646,"metadata":1277},"But","https://tabs.ultimate-guitar.com/tab/chon/but-guitar-pro-1855962",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":1275,"marketing_type":662,"rating":1278,"votes":884,"tab_id":1279,"tab_url":1276,"device":652,"app_link":653,"highlight":1280,"tracks":1258,"duration":1284},4.67174,1855962,{"song_name":1281,"artist_name":1282},[],[1283],[38,658],"3:18",{"artistName":643,"songTitle":1275,"originUrl":1276,"origin":646,"metadata":1286},{"id":1279,"song_id":1287,"song_name":1275,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":884,"difficulty":690,"rating":1278,"date":1288,"status":680,"preset_id":1289,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":652,"verified":38,"recording":1290,"artist_url":685,"tab_url":1276},1629325,"1466768976",2993,{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1291},[],{"artistName":643,"songTitle":271,"originUrl":1293,"origin":646,"metadata":1294},"https://www.ultimate-guitar.com/pro/?app_utm_source=UltimateGuitar&app_utm_medium=Search&app_utm_campaign=UG+Search&artist=CHON&song=checkpoint&tab_id=2074313",{"artist_name":643,"artist_id":648,"artist_url":649,"song_name":271,"marketing_type":662,"rating":797,"votes":798,"tab_id":1295,"tab_url":1293,"device":652,"app_link":653,"highlight":1296,"tracks":1300,"duration":1301},2074313,{"song_name":1297,"artist_name":1298},[],[1299],[38,658],"Electric Guitar (clean) (x3)","3:00",{"artistName":643,"songTitle":271,"originUrl":1303,"origin":646,"metadata":1304},"https://tabs.ultimate-guitar.com/tab/chon/checkpoint-guitar-pro-2074313",{"id":1295,"song_id":1305,"song_name":271,"artist_id":648,"artist_name":643,"type":674,"part":677,"version":135,"votes":798,"difficulty":677,"rating":797,"date":1306,"status":680,"preset_id":38,"tab_access_type":682,"tp_version":135,"tonality_name":677,"version_description":677,"verified":38,"recording":1307,"artist_url":685,"tab_url":1303},1755205,"1498810071",{"is_acoustic":38,"tonality_name":677,"performance":652,"recording_artists":1308},[],{"songTitle":1310,"artistName":1311,"origin":1312,"originUrl":1313,"metadata":1314},"Ay Ay Ay Devchonka","Ruki Vverh, The","guitar-pro-tabs-org","https://guitarprotabs.org/r/ruki_vverh,_the/ay_ay_ay_devchonka_15988/download",{"fileExtension":1315,"downloadCount":1316},".gp3","1,204",{"songTitle":1318,"artistName":1319,"origin":1312,"originUrl":1320,"metadata":1321},"Hyper Insomniaparachondroid","Sum 41","https://guitarprotabs.org/s/sum_41/hyper_insomniaparachondroid_18104/download",{"fileExtension":1322,"downloadCount":1323},".gp4","744",{"songTitle":1325,"artistName":1326,"origin":1312,"originUrl":1327,"metadata":1328},"Schonen Grus, Auf Wiedersehn","Die Toten Hosen","https://guitarprotabs.org/d/die_toten_hosen/schonen_grus,_auf_wiedersehn_5028/download",{"fileExtension":1315,"downloadCount":1329},"1,244",{"songTitle":1331,"artistName":1332,"origin":1312,"originUrl":1333,"metadata":1334},"Vachon, Philip   Philblues","Vachon, Philip","https://guitarprotabs.org/v/vachon,_philip/vachon,_philip___philblues_19938/download",{"fileExtension":1315,"downloadCount":1335},"1,010",{"songTitle":1337,"artistName":1338,"origin":1312,"originUrl":1339,"metadata":1340},"Wie Schon Leuchtet Der Morgenstern","Bach","https://guitarprotabs.org/b/bach/wie_schon_leuchtet_der_morgenstern_1295/download",{"fileExtension":1315,"downloadCount":1341},"1,313",{"songTitle":1343,"artistName":-1,"origin":1312,"originUrl":1344,"metadata":1345},"\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t(adsbygoogle = window.adsbygoogle || []).push({});\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t","undefineddownload",{"fileExtension":-1,"downloadCount":-1}]'
-);
+export const mockData: SearchResult[] = [
+  {
+      "artistName": "Chon",
+      "songTitle": "Bubble Dream (Tab Book Version)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Bubble Dream (Tab Book Version)",
+          "songId": 399672,
+          "tracks": [
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 6.1981526339999995
+              },
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.8401944029999999
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 2.0280601649999994
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.32192999999999994
+              },
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 2.1487236089999997
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Fluffy",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Fluffy",
+          "songId": 399673,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 10.647648174644713
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.7130180467440276
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Waterslide",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Waterslide",
+          "songId": 434770,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 5.662926745323853
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 1.4864124654759627
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 0
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28,
+                      23
+                  ],
+                  "instrumentId": 33,
+                  "views": 0
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Dew (Tab Book Version)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Dew (Tab Book Version)",
+          "songId": 399675,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 3.1125573472658967
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 1.6946556490166227
+              },
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 4.9073475404232775e-15
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Story 2",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Story 2",
+          "songId": 424549,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 4.077836797303078
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.024896069033104432
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Mountains Of Creation",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Mountains Of Creation",
+          "songId": 87500,
+          "tracks": [
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 2.2939296925983603
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.012106082318339154
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Perfect Pillow",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Perfect Pillow",
+          "songId": 548473,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.24064873139999993
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.4580074356608098
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28
+                  ],
+                  "instrumentId": 33,
+                  "views": 0.9753837861602999
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 0.45016608209999986
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 2
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Pitch Dark Alternative",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Pitch Dark Alternative",
+          "songId": 453078,
+          "tracks": [
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.029421355821108233
+              },
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 1.0752432598935253
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.7999026877997104
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.21244173620461676
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Dust",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Dust",
+          "songId": 389996,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 1.6587664307537215
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Sleepy Tea V3",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Sleepy Tea V3",
+          "songId": 442551,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 1.2596370290728898
+              },
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.255833626209645
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28,
+                      23
+                  ],
+                  "instrumentId": 33,
+                  "views": 0.10289999999999999
+              },
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.0020346692186756165
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 3.165808519306326e-22
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Og",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Og",
+          "songId": 379498,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 1.61172209981878
+              },
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.007401215745710379
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "No Signal 2",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "No Signal 2",
+          "songId": 452691,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.42000000900619866
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 1.0458748136926905
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Continue",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Continue",
+          "songId": 435167,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 1.4230947871892679
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "The Space New Versin",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "The Space New Versin",
+          "songId": 437929,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 1.156962462238739
+              },
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 1.2954343702189266e-9
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "No Signal",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "No Signal",
+          "songId": 449241,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.054314154440124544
+              },
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.9653946089274343
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 0.012106082099999995
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Suda (Grow)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Suda (Grow)",
+          "songId": 397472,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.0034033515119835604
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.8121480382578796
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28
+                  ],
+                  "instrumentId": 34,
+                  "views": 0.00016770781432151797
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 0.10623140369548308
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Knot 2",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Knot 2",
+          "songId": 424551,
+          "tracks": [
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.8964522812328315
+              },
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.012971684842474239
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "The Space",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "The Space",
+          "songId": 436416,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.7225007238404872
+              },
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.06151909776504271
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28,
+                      23
+                  ],
+                  "instrumentId": 33,
+                  "views": 0.000057474521821906424
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Checkpoint",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Checkpoint",
+          "songId": 435195,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.7285328038212104
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.00004220098479811209
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.000003313283022731755
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Breathe (Both Parts)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Breathe (Both Parts)",
+          "songId": 390566,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.6786009670091016
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.02582734408333598
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Fall 2",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Fall 2",
+          "songId": 424552,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.6543496609655494
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.0020346746139747593
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Elliptical Illuminations",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Elliptical Illuminations",
+          "songId": 87499,
+          "tracks": [
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.6325814575378492
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.000047438785661332333
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Ecco",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Ecco",
+          "songId": 389314,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.609802789219446
+              },
+              {
+                  "difficulty": "INSANE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "shashank exercise",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "shashank exercise",
+          "songId": 496345,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 24,
+                  "views": 0.5977556304150548
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Cheech And Chong",
+      "songTitle": "Earache My Eye",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Cheech And Chong",
+          "artistId": 1343,
+          "title": "Earache My Eye",
+          "songId": 4370,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.3082209913011794
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28
+                  ],
+                  "instrumentId": 36,
+                  "views": 0.0504841342297915
+              },
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.04941283651860409
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 5.064916658830552e-13
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Sleepy Tea",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Sleepy Tea",
+          "songId": 433112,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.3586695520141153
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 0.012406320035187358
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Puddle Solo",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Puddle Solo",
+          "songId": 397924,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.017294403001476652
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.3456692660725729
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 2.177236546026949e-10
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Across The Spectrum",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Across The Spectrum",
+          "songId": 395345,
+          "tracks": [
+              {
+                  "difficulty": "INSANE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.2512746911548114
+              },
+              {
+                  "difficulty": "INSANE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.05042516928393886
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Wave Bounce",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Wave Bounce",
+          "songId": 436415,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.2111010560335525
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.06450603488272597
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "The Perfect Pillow V.2",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "The Perfect Pillow V.2",
+          "songId": 386585,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.15639708929690327
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.11731735384558777
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Temporarily Destabilized - More To Come",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Temporarily Destabilized - More To Come",
+          "songId": 394599,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.1839397164788972
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 3.289559140659492e-8
+              },
+              {
+                  "difficulty": "INSANE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.05460156524385969
+              },
+              {
+                  "difficulty": "INSANE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.011897475343364867
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Newborn Sun (Tab Book Version)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Newborn Sun (Tab Book Version)",
+          "songId": 399674,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.23902293176559922
+              },
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.000010838959772762898
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 1.4766520605655393e-12
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Sketch",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Sketch",
+          "songId": 389315,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.03040441390441819
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.20579999999999998
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Mario Camarena Instagram Riff",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Mario Camarena Instagram Riff",
+          "songId": 401369,
+          "tracks": [
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.15850209278215688
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Dew 2",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Dew 2",
+          "songId": 424550,
+          "tracks": [
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.0033132965275823644
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.14700162350869117
+              },
+              {
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 89,
+                  "views": 0
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Breathe",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Breathe",
+          "songId": 388679,
+          "tracks": [
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.14904847671626578
+              },
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 9.10907539100572e-21
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Awkward By Tyler The Creator Cover By Mario",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Awkward By Tyler The Creator Cover By Mario",
+          "songId": 394595,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.13203513735956823
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Muse",
+      "songTitle": "Hyper Chondriac Music",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Muse",
+          "artistId": 184,
+          "title": "Hyper Chondriac Music",
+          "songId": 13410,
+          "tracks": [
+              {
+                  "difficulty": "VERY_EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.05116867064330283
+              },
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      38
+                  ],
+                  "instrumentId": 30,
+                  "views": 1.0336564423958775e-12
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 29,
+                  "views": 0.06934430204401287
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      26
+                  ],
+                  "instrumentId": 87,
+                  "views": 6.367173779894534e-125
+              },
+              {
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 66,
+                  "views": 6.177985102501101e-23
+              },
+              {
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      38
+                  ],
+                  "instrumentId": 1,
+                  "views": 0.00023937679889323986
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 2.6740584198147644e-7
+              }
+          ],
+          "hasChords": true,
+          "defaultTrack": 2
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Shashank Exercise Slow",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Shashank Exercise Slow",
+          "songId": 496346,
+          "tracks": [
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 24,
+                  "views": 0.07203
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Some Jolly Riffage - Mario Camarena",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Some Jolly Riffage - Mario Camarena",
+          "songId": 397031,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 26,
+                  "views": 6.209763553003866e-12
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Here And There",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Here And There",
+          "songId": 447724,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.0003077184834757079
+              },
+              {
+                  "difficulty": "HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.02716052783303922
+              },
+              {
+                  "tuning": [
+                      43,
+                      38,
+                      33,
+                      28
+                  ],
+                  "instrumentId": 33,
+                  "views": 7.308529129551049e-13
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 0.002906670312209998
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Hot Chocolate Riff",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Hot Chocolate Riff",
+          "songId": 445651,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.017641103354867484
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Beatbox Riff",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Beatbox Riff",
+          "songId": 397437,
+          "tracks": [
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.006928968146594531
+              },
+              {
+                  "instrumentId": 1024,
+                  "views": 1.7451295166872083e-103
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Fall (Ending)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Fall (Ending)",
+          "songId": 399654,
+          "tracks": [
+              {
+                  "difficulty": "INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.002693662846296711
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Obsjsbcgcy (Soundcloud Riff)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Obsjsbcgcy (Soundcloud Riff)",
+          "songId": 393098,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.00203466925617347
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Bday Riffage",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Bday Riffage",
+          "songId": 379580,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.0014478523081923212
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "New Song From Livestream 2018",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "New Song From Livestream 2018",
+          "songId": 447982,
+          "tracks": [
+              {
+                  "difficulty": "UPPER_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 1.6382353661564067e-28
+              },
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 27,
+                  "views": 0.0010106372157934254
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Live Intro Tab (Very Old)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Live Intro Tab (Very Old)",
+          "songId": 388997,
+          "tracks": [
+              {
+                  "difficulty": "VERY_HARD",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.0009969879170880292
+              },
+              {
+                  "difficulty": "EASY",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "Super Potion",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "Super Potion",
+          "songId": 436921,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 25,
+                  "views": 0.0006228273286161665
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 0
+      }
+  },
+  {
+      "artistName": "Chon",
+      "songTitle": "The Perfect Pillow (Alternate Solo)",
+      "originUrl": "https://www.songsterr.com/?pattern=chon",
+      "origin": "songsterr",
+      "metadata": {
+          "hasPlayer": true,
+          "artist": "Chon",
+          "artistId": 17625,
+          "title": "The Perfect Pillow (Alternate Solo)",
+          "songId": 390567,
+          "tracks": [
+              {
+                  "difficulty": "BELOW_INTERMEDIATE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 4.690716875726083e-63
+              },
+              {
+                  "difficulty": "INSANE",
+                  "tuning": [
+                      64,
+                      59,
+                      55,
+                      50,
+                      45,
+                      40
+                  ],
+                  "instrumentId": 30,
+                  "views": 0.000009659717267439521
+              }
+          ],
+          "hasChords": false,
+          "defaultTrack": 1
+      }
+  }
+]

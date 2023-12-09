@@ -15,12 +15,12 @@ export class GuitarProTabsNetRepository extends BaseRepository implements Resour
 
 			return Array.from(searchResultsHtml).map(this.extractInformationFromSearchResultItem);
 		} catch (error) {
-			this.logSearchError('error getting search results from UltimateProTabs.org', error);
+			this.logSearchError(error);
 			return [];
 		}
 	}
 
-	private extractInformationFromSearchResultItem(item: HTMLTableRowElement) {
+	private extractInformationFromSearchResultItem(item: HTMLTableRowElement): SearchResult {
 		const tdElements = item.getElementsByTagName('td');
 		const [guitarProVersion, songNameAndArtist, album, viewCount] = Array.from(tdElements).map(
 			(a) => a.textContent

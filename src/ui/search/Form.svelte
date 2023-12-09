@@ -1,27 +1,37 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { mockSearchResults } from '$lib/constants/mockData';
+	import { sampleSearchResults } from '$lib/constants/sampleSearchResults';
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
-	import { HtmlInputUtils } from '$lib/utils/html-input';
+	import { searchResultsStore } from '../../stores/searchResults.store';
+	import SearchResultItemSkeleton from '../skeletons/SearchResultItemSkeleton.svelte';
+	import NoResultsPlaceholder from './NoResultsPlaceholder.svelte';
+	import ResultsFoundText from './ResultsFoundText.svelte';
 	import SearchResultItem from './SearchResultItem.svelte';
-	const { debounce } = new HtmlInputUtils();
+	import ShowResultsFromFilter from './filters/ShowResultsFromFilter.svelte';
 
-	const debounceThenSubmit = debounce((event: Event) => {
-		event.preventDefault();
-		const { value } = <HTMLTextAreaElement>event.target;
+	let searchQuery: string;
+	let searchResults: SearchResult[];
 
-		if (value.length < MINIMUM_CHARATCERS_FOR_SEARCH) {
-			return;
-		}
+	let noResultsReturned: boolean = false;
+	let shouldShowResultsFoundText = false;
+	let isSubmitting = false;
 
-		// form.submit();
-	}, 150);
-
-	let searchResults: SearchResult[] = [];
+	searchResultsStore.subscribe((results) => {
+		searchResults = results;
+	});
 
 	function setSearchResults(formResult: any) {
-		if (formResult?.data?.results) {
-			searchResults = formResult.data.results;
+		isSubmitting = false;
+		const results = formResult?.data?.results;
+		searchQuery = formResult.data.searchQuery;
+		if (results) {
+			searchResultsStore.set(formResult.data.results);
+			noResultsReturned = false;
+			shouldShowResultsFoundText = true;
+		}
+		if (results.length === 0) {
+			noResultsReturned = true;
+			shouldShowResultsFoundText = false;
 		}
 	}
 </script>
@@ -29,32 +39,56 @@
 <form
 	method="POST"
 	action="?/search"
-	class="flex justify-around items-center"
+	class="flex flex-col w-full mb-5"
 	use:enhance={({ formElement, formData, action, cancel, submitter }) => {
+		isSubmitting = true;
 		return async ({ result, update }) => {
 			setSearchResults(result);
 			await update({ reset: false });
 		};
 	}}
 >
-	<input
-		class="input mr-4 text-xl block w-full bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-center"
-		type="text"
-		name="q"
-		placeholder="Metallica"
-		on:keyup={debounceThenSubmit}
-		minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
-		min={MINIMUM_CHARATCERS_FOR_SEARCH}
-	/>
+	<div class="flex mb-2.5 w-full items-center">
+		<input
+			class="input mr-4 text-xl block w-full bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-center"
+			type="text"
+			name="q"
+			required={true}
+			placeholder="Playing God Polyphia"
+			minlength={MINIMUM_CHARATCERS_FOR_SEARCH}
+			min={MINIMUM_CHARATCERS_FOR_SEARCH}
+		/>
 
-	<button
-		type="submit"
-		class="text-lg flex items-center w-fit h-full px-2 py-1 font-semibold p-2 rounded-lg shadow-md transition duration-75 cursor-pointer bg-red-500 hover:bg-red-400 text-white disabled:bg-slate-5 disabled:hover:bg-slate-6 disabled:hover:cursor-not-allowed"
-	>
-		<span class="mr-0.5">Search</span>
-	</button>
+		<button
+			type="submit"
+			class="text-lg flex items-center w-fit h-full px-2 py-1 font-semibold p-2 rounded-lg shadow-md transition duration-75 cursor-pointer bg-red-500 hover:bg-red-400 text-white disabled:bg-slate-5 disabled:hover:bg-slate-6 disabled:hover:cursor-not-allowed"
+		>
+			<span class="mr-0.5">Search</span>
+		</button>
+	</div>
+
+	<div class="w-full flex justify-between">
+		<strong class="mb-1 block"> Showing Results From: </strong>
+		<ShowResultsFromFilter />
+	</div>
 </form>
 
-{#each searchResults as searchResult, index}
-	<SearchResultItem {searchResult} {index} />
-{/each}
+{#if shouldShowResultsFoundText}
+	<ResultsFoundText {searchQuery} resultsCount={searchResults.length} />
+{/if}
+
+{#if isSubmitting}
+	{#each new Array(30).fill('_') as { }}
+		<SearchResultItemSkeleton />
+	{/each}
+{/if}
+
+{#if !isSubmitting && searchResults.length}
+	{#each searchResults as searchResult}
+		<SearchResultItem {searchResult} />
+	{/each}
+{/if}
+
+{#if !searchResults.length}
+	<NoResultsPlaceholder withActiveSearch={noResultsReturned} />
+{/if}
