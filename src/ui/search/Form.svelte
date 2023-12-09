@@ -3,6 +3,7 @@
 	import { sampleSearchResults } from '$lib/constants/sampleSearchResults';
 	import { MINIMUM_CHARATCERS_FOR_SEARCH } from '$lib/constants/search';
 	import { searchResultsStore } from '../../stores/searchResults.store';
+	import SearchResultItemSkeleton from '../skeletons/SearchResultItemSkeleton.svelte';
 	import NoResultsPlaceholder from './NoResultsPlaceholder.svelte';
 	import ResultsFoundText from './ResultsFoundText.svelte';
 	import SearchResultItem from './SearchResultItem.svelte';
@@ -13,12 +14,14 @@
 
 	let noResultsReturned: boolean = false;
 	let shouldShowResultsFoundText = false;
+	let isSubmitting = false;
 
 	searchResultsStore.subscribe((results) => {
 		searchResults = results;
 	});
 
 	function setSearchResults(formResult: any) {
+		isSubmitting = false;
 		const results = formResult?.data?.results;
 		searchQuery = formResult.data.searchQuery;
 		if (results) {
@@ -38,9 +41,8 @@
 	action="?/search"
 	class="flex flex-col w-full mb-5"
 	use:enhance={({ formElement, formData, action, cancel, submitter }) => {
+		isSubmitting = true;
 		return async ({ result, update }) => {
-			console.log('RESULT', result);
-
 			setSearchResults(result);
 			await update({ reset: false });
 		};
@@ -75,9 +77,17 @@
 	<ResultsFoundText {searchQuery} resultsCount={searchResults.length} />
 {/if}
 
-{#each searchResults as searchResult, index}
-	<SearchResultItem {searchResult} {index} />
-{/each}
+{#if isSubmitting}
+	{#each new Array(30).fill('_') as { }}
+		<SearchResultItemSkeleton />
+	{/each}
+{/if}
+
+{#if !isSubmitting && searchResults.length}
+	{#each searchResults as searchResult}
+		<SearchResultItem {searchResult} />
+	{/each}
+{/if}
 
 {#if !searchResults.length}
 	<NoResultsPlaceholder withActiveSearch={noResultsReturned} />

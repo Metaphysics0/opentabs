@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let searchQuery: string = '';
+	export let searchQuery: string;
 	export let resultsCount: number;
 </script>
 
@@ -7,5 +7,5 @@
 	<strong>
 		{resultsCount} results found
 	</strong>
-	for {searchQuery || 'search'}
+	for "{searchQuery}"
 </div>

@@ -25,7 +25,7 @@ export function createInputPropertiesFromResource(resource: SupportedResources):
 			website: 'https://guitarprotabs.net'
 		},
 		[SupportedResources.GUITAR_PRO_TABS_ORG]: {
-			label: 'Guitar-Pro-Tabs.org',
+			label: 'GuitarProTabs.org',
 			website: 'https://guitarprotabs.org'
 		}
 	} as const;

@@ -1,45 +1,9 @@
 <script lang="ts">
-	import { apiService } from '$lib/apiService';
-	import { originUrlMap } from '$lib/constants/origin-url';
-	import { triggerDownloadFromResponse } from '$lib/utils/triggerDownloadFromResponse';
-	import Icon from '@iconify/svelte';
-	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
-
-	import { getToastStore } from '@skeletonlabs/skeleton';
-	const toastStore = getToastStore();
+	import DownloadButton from '../buttons/DownloadButton.svelte';
+	import VisitPageButton from '../buttons/VisitPageButton.svelte';
+	import OriginTooltip from '../common/tooltips/OriginTooltip.svelte';
 
 	export let searchResult: SearchResult;
-	export let index: number;
-
-	async function downloadTab() {
-		try {
-			const response = await apiService.download.fromAny(searchResult);
-			if (response.error) {
-				toastStore.trigger({
-					message: 'Error downloading tab 😭',
-					background: 'variant-filled-error'
-				});
-			}
-
-			if (response) {
-				triggerDownloadFromResponse(response);
-			}
-		} catch (error) {
-			console.error('error fetching', error);
-		}
-	}
-
-	const metadataTooltip: PopupSettings = {
-		event: 'hover',
-		target: `metadataTooltip-${index}`,
-		placement: 'top'
-	};
-
-	const downloadTooltip: PopupSettings = {
-		event: 'hover',
-		target: `downloadTooltip-${index}`,
-		placement: 'right'
-	};
 </script>
 
 <div class="text-xl flex items-end justify-between rounded-md shadow p-3 my-3">
@@ -56,29 +20,11 @@
 		<p class="text-lg"></p>
 	</div>
 	<div class="flex items-center">
-		<div class="[&>*]:pointer-events-none mr-10" use:popup={metadataTooltip}>
-			<Icon class="text-2xl opacity-50" icon="material-symbols:info" />
-		</div>
-		<button
-			class="btn-icon bg-blue-400 text-white text-2xl"
-			use:popup={downloadTooltip}
-			on:click={downloadTab}
-		>
-			<Icon icon="material-symbols:download" />
-		</button>
+		<OriginTooltip {searchResult} />
+		{#if searchResult.origin === 'guitar-pro-tabs-org'}
+			<VisitPageButton {searchResult} />
+		{:else}
+			<DownloadButton {searchResult} />
+		{/if}
 	</div>
-</div>
-
-<!-- metadata toolitp -->
-<div class="card p-4 bg-white shadow" data-popup={metadataTooltip.target}>
-	Origin: <a class="text-blue-500" href={searchResult.origin} target="_blank"
-		>{originUrlMap[searchResult.origin]}</a
-	>
-	<div class="arrow bg-white shadow" />
-</div>
-
-<!-- Download Tooltip -->
-<div class="card p-4 bg-white shadow" data-popup={downloadTooltip.target}>
-	Download
-	<div class="arrow bg-white shadow" />
 </div>

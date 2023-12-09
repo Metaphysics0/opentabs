@@ -1,6 +1,6 @@
 <script>
 	import '../app.pcss';
-	import Header from '../ui/typography/Header.svelte';
+	import Logo from '../ui/typography/Logo.svelte';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 	import { storePopup, initializeStores, Toast } from '@skeletonlabs/skeleton';
 
@@ -9,5 +9,5 @@
 </script>
 
 <Toast />
-<Header />
+<Logo />
 <slot />

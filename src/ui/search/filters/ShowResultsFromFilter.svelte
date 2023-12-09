@@ -1,7 +1,11 @@
 <script lang="ts">
 	import { SupportedResources, createInputPropertiesFromResource } from '$lib/types/enums';
 
-	const filterOptions = [SupportedResources.SONGSTERR, SupportedResources.ULTIMATE_GUITAR]
+	const filterOptions = [
+		SupportedResources.SONGSTERR,
+		SupportedResources.ULTIMATE_GUITAR,
+		SupportedResources.GUITAR_PRO_TABS_ORG
+	]
 		.map(createInputPropertiesFromResource)
 		.map((filterOption) => ({ ...filterOption, checked: true }));
 </script>
