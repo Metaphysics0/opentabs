@@ -1,5 +1,6 @@
 <script>
 	import '../app.pcss';
+	import Footer from '../ui/Footer.svelte';
 	import Navbar from '../ui/Navbar.svelte';
 	import Logo from '../ui/typography/Logo.svelte';
 	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
@@ -12,3 +13,4 @@
 <Toast />
 <Navbar />
 <slot />
+<Footer />

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
+	import SocialLinks from '../../ui/SocialLinks.svelte';
 
 	const disclosureItems: { icon: string; summary: string; content: string; isOpen?: boolean }[] = [
 		{
@@ -19,17 +20,20 @@
 	];
 </script>
 
-<main class="mt-10">
-	<section class="w-5/6 mx-auto bg-slate">
-		<Accordion hover="hover:bg-red text-2xl">
+<main class="mt-10 w-5/6 mx-auto">
+	<h3 class="text-center text-4xl font-bold mb-3">FAQ's</h3>
+	<section class="mx-auto bg-slate rounded-md shadow-md">
+		<Accordion hover="hover:bg-blue-300 hover:bg-opacity-40 transition ease text-2xl">
 			{#each disclosureItems as disclosureItem, idx}
-				<AccordionItem open>
+				<AccordionItem open={idx === 0}>
 					<svelte:fragment slot="lead">
 						<Icon icon={disclosureItem.icon} />
 					</svelte:fragment>
 					<svelte:fragment slot="summary">{disclosureItem.summary}</svelte:fragment>
 					<svelte:fragment slot="content">
-						{@html disclosureItem.content}
+						<div class="mt-2">
+							{@html disclosureItem.content}
+						</div>
 					</svelte:fragment>
 				</AccordionItem>
 			{/each}
